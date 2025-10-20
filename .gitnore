@@ -1,0 +1,48 @@
+# 环境
+venv/
+.env
+.venv/
+env/
+
+# 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+
+# 输出文件
+outputs/*
+!outputs/.gitkeep
+
+# 大文件
+*.pdf
+*.zip
+*.rar
+*.7z
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志
+*.log
+logs/
+
+# 临时文件
+temp/
+tmp/
+
+# 数据文件（大文件）
+*.h5
+*.hdf5
+*.pkl
+*.pickle
