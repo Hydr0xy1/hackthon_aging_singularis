@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>语义方法 vs 传统方法对比报告</title>
+    <meta charset="utf-8">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 20px; 
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            color: #2c3e50; 
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .improvement {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .degradation {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .metric-card {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }
+        .semantic-feature {
+            background: #e7f3ff;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border-left: 3px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 语义方法 vs 传统方法对比报告</h1>
+        
+        <div class="metric-card">
+            <h3>📈 基本统计对比</h3>
+            <table class="comparison-table">
+                <tr>
+                    <th>指标</th>
+                    <th>传统方法</th>
+                    <th>语义方法</th>
+                    <th>改进</th>
+                </tr>
+                <tr>
+                    <td>节点总数</td>
+                    <td>88</td>
+                    <td>71</td>
+                    <td class="degradation">-17</td>
+                </tr>
+                <tr>
+                    <td>平均置信度</td>
+                    <td>0.80</td>
+                    <td>0.80</td>
+                    <td class="improvement">+0.00</td>
+                </tr>
+                <tr>
+                    <td>证据多样性</td>
+                    <td>15</td>
+                    <td>4</td>
+                    <td class="degradation">-11</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="metric-card">
+            <h3>🧠 语义特征分析</h3>
+            <div class="semantic-feature">
+                <strong>语义上下文节点:</strong> 71 个
+            </div>
+            <div class="semantic-feature">
+                <strong>语义消歧应用:</strong> 71 个节点
+            </div>
+            <div class="semantic-feature">
+                <strong>识别的语义角色:</strong> 4 种
+            </div>
+            <div class="semantic-feature">
+                <strong>提取的实体总数:</strong> 355 个
+            </div>
+        </div>
+        
+        <div class="metric-card">
+            <h3>🔍 语义消歧示例</h3>
+            
+        <div style="background: #fff3cd; padding: 10px; margin: 5px 0; border-radius: 4px; border-left: 3px solid #ffc107;">
+            <strong>Dataset:</strong> In this study, we explored the therapeutic potential of artemisinins in rodent PCOS-like models and ...<br>
+            <small>语义角色: general | 实体: in, this, study</small>
+        </div>
+        
+        <div style="background: #fff3cd; padding: 10px; margin: 5px 0; border-radius: 4px; border-left: 3px solid #ffc107;">
+            <strong>Experiment:</strong> Using in vitro and in vivo approaches, we investigated the impact of artemisinins on ovarian testost...<br>
+            <small>语义角色: general | 实体: using, in, vitro</small>
+        </div>
+        
+        <div style="background: #fff3cd; padding: 10px; margin: 5px 0; border-radius: 4px; border-left: 3px solid #ffc107;">
+            <strong>Dataset:</strong> Lastly, a pilot clinical trial was conducted to confirm the therapeutic effects of artemisinins in p...<br>
+            <small>语义角色: general | 实体: lastly, a, pilot</small>
+        </div>
+        
+        <div style="background: #fff3cd; padding: 10px; margin: 5px 0; border-radius: 4px; border-left: 3px solid #ffc107;">
+            <strong>Dataset:</strong> We found that dihydroartemisinin treatment effectively ameliorated hyperandrogenemia, re- duced anti...<br>
+            <small>语义角色: general | 实体: we, found, that</small>
+        </div>
+        
+        <div style="background: #fff3cd; padding: 10px; margin: 5px 0; border-radius: 4px; border-left: 3px solid #ffc107;">
+            <strong>Conclusion:</strong> Overall, our findings high- light the promising potential of artemisinins as effective drugs for the...<br>
+            <small>语义角色: conclusive_statement | 实体: overall, our, findings</small>
+        </div>
+        
+        </div>
+        
+        <div class="metric-card">
+            <h3>📊 节点类型分布对比</h3>
+            
+        <tr>
+            <td>Analysis</td>
+            <td>11</td>
+            <td>13</td>
+            <td class="improvement">+2</td>
+        </tr>
+        
+        <tr>
+            <td>Hypothesis</td>
+            <td>1</td>
+            <td>0</td>
+            <td class="degradation">-1</td>
+        </tr>
+        
+        <tr>
+            <td>Experiment</td>
+            <td>21</td>
+            <td>28</td>
+            <td class="improvement">+7</td>
+        </tr>
+        
+        <tr>
+            <td>Dataset</td>
+            <td>53</td>
+            <td>21</td>
+            <td class="degradation">-32</td>
+        </tr>
+        
+        <tr>
+            <td>Conclusion</td>
+            <td>2</td>
+            <td>9</td>
+            <td class="improvement">+7</td>
+        </tr>
+        
+        </div>
+    </div>
+</body>
+</html>
+    
