@@ -1,0 +1,1082 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>语义感知的IMRaD知识图谱</title>
+    <meta charset="utf-8">
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 20px; 
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            color: #2c3e50; 
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .stats {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .node { 
+            margin: 10px 0; 
+            padding: 15px; 
+            border-radius: 8px; 
+            color: white; 
+            border-left: 5px solid rgba(0,0,0,0.2);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .hypothesis { background: #e67e22; }
+        .experiment { background: #3498db; }
+        .dataset { background: #1abc9c; }
+        .analysis { background: #9b59b6; }
+        .conclusion { background: #e74c3c; }
+        .semantic-info {
+            background: #f8f9fa;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .disambiguation {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 语义感知的IMRaD知识图谱</h1>
+        
+        <div class="stats">
+            <strong>语义提取统计:</strong><br>
+            节点总数: 71 | 边关系总数: 1<br>
+            语义消歧应用: 71 | 处理时间: 2025-10-22 00:21:44
+        </div>
+        
+        <h2>🔗 语义边关系</h2>
+        
+            <div class="edge" style="margin: 8px 0; padding: 10px; background: #f8f9fa; border-left: 4px solid #34495e; border-radius: 4px;">
+                <strong>EXP_8eb5b2</strong> → 
+                <strong>DAT_65db80</strong> 
+                <small>(uses_data | 置信度: 1.0)</small>
+                <br><small>语义证据: similarity:1.00</small>
+            </div>
+            
+        
+        <h2>📝 语义节点</h2>
+        <div class="section" style="background: #2c3e50; color: white; padding: 10px 15px; margin: 20px 0 10px 0; border-radius: 5px; font-weight: bold;">📁 FULL_TEXT 章节</div>
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">In this study, we explored the therapeutic potential of artemisinins in rodent PCOS-like models and human patients with PCOS by evaluating the effect of artemi- sinin derivatives on testosterone level, estrous cycle, and polycystic ovarian morphology.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> in, this, study, we, explored<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_27e910 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Using in vitro and in vivo approaches, we investigated the impact of artemisinins on ovarian testoster- one synthesis.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> using, in, vitro, and, in<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_976084 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Lastly, a pilot clinical trial was conducted to confirm the therapeutic effects of artemisinins in patients with PCOS.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> lastly, a, pilot, clinical, trial<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_9ba9d0 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">We found that dihydroartemisinin treatment effectively ameliorated hyperandrogenemia, re- duced anti-Müllerian hormone levels, improved polycystic ovarian morphology, and contributed to the normalization of menstruation in patients CONCLUSION: Our data demonstrated the ef- ficacy of artemisinins in alleviating symptoms associated with PCOS in both rodent models and human patients.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> we, found, that, dihydroartemisinin, treatment<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_d33a0a | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node conclusion">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Conclusion</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Overall, our findings high- light the promising potential of artemisinins as effective drugs for the comprehensive treat- ment of PCOS.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> conclusive_statement<br>
+                        <strong>关键实体:</strong> overall, our, findings, high, light<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: CON_1ce71b | 证据: semantic:Conclusion
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">More- over, COCs are often associated with side effects such as vascular thromboembolism (17), which limit their long-term clinical appli- cation, particularly for PCOS patients with metabolic disorders.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> more, over, cocs, are, often<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_05c35c | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">ATM exerts an inhibitory effect against PCOS-like phenotype in rodent models To evaluate the effect of artemisinins on PCOS development, we established a PCOS-like mouse model using dehydroepiandrosterone (DHEA) and simultaneously treated the mice with ATM, a type of artemisinin (Fig. 1, A and B).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> atm, exerts, an, inhibitory, effect<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_58defb | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">When administered simultaneously, ATM ablated the elevated serum testosterone in DHEA-treated mice, thereby preventing PCOS- like traits (Fig. 1C).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> when, administered, simultaneously, atm, ablated<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_cb7478 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">S1E), which is one of the indicators for PCOS al- leviation (3), although there was no statistical difference.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> analytical_action<br>
+                        <strong>关键实体:</strong> s1e, which, is, one, of<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_fe36e3 | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node conclusion">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Conclusion</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Ovarian histological analysis revealed that ATM reversed the oligo-ovulatory phenotype in DHEA-treated rats, as indicated by an elevation of postovulation corpora lutea and a decrease in cyst-like follicles (Fig. 2D).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> ovarian, histological, analysis, revealed, that<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: CON_5f9cb6 | 证据: semantic:Conclusion
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Identification of ATM as an anti-PCOS agent in mouse model. (A) Chemical structures of artemether (ATM), SM934, and artesunate (ATS). (B) Four-week-old female mice received subcutaneous DHEA injections (60 mg/kg/day) along with intraperitoneal ATM injections (30 mg/kg/day) for 60 days.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> identification, of, atm, as, an<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_e936d2 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Subsequently, the mice were assessed for (C) serum testosterone (n = 6 to 12 biological replicates of mice), (D) estrous cycle analysis, and (E) hematoxylin and eosin (H&E) staining of representative ovaries showing cystic follicle or atretic follicle (asterisk), antral follicle (hash symbol), and corpora lutea or corpus albicans (arrow; scale bars, 200 mm). (F) After the establishment of a DHEA-induced (60 mg/kg/day) PCOS-like model, mice were administered varying dosages of ATM (30 mg/ kg/day and 60 mg/kg/day) via intraperitoneal injection and then evaluated for (G) serum testos- terone (n = 6 per group), (H) estrous cycle analysis, (I) morphology of uterus, and (J) H&E staining of representative ovaries showing cystic follicle or atretic follicle (asterisk), antral follicle (hash symbol), and corpora lutea or corpus albicans (arrow; scale bars, 200 mm). (K) After establishment of DHEA- induced (60 mg/kg/day) PCOS-like model, the mice received intragastric administration of ATM (100 mg/kg/day) and were then assessed for (L) serum testosterone (n = 6 to 8 per group), (M) estrous cycle analysis, (N) morphology of uterus, and (O) H&E staining of representative ovaries showing cystic follicle or atretic follicle (asterisk), antral follicle (hash symbol), and corpora lutea or corpus albicans (arrow; scale bars, 200 mm).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> subsequently, the, mice, were, assessed<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_3a5fb3 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Data in (G) and (L) were analyzed with Brown-Forsythe and Welch analysis of variance (ANOVA) tests with Tamhane’s T2 multiple comparisons test. *P < 0.05, **P < 0.01.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> data, in, g, and, l<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_15e84b | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Subsequently, the rats were assessed for (B) serum testosterone (n = 3 to 6 biological replicates), (C) estrous cycle analysis, and (D) H&E staining of representative ovaries showing cystic follicle or atretic follicle (asterisk), antral follicle (hash symbol), and corpora lutea or corpus albicans (arrow; scale bars, 500 mm). (E) Four-week-old female rats were subcutaneously injected with hCG and insulin to establish a PCOS-like model and then received intraperitoneal treatments of ATM (30 mg/kg/day).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> subsequently, the, rats, were, assessed<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_380354 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node conclusion">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Conclusion</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Thereafter, the rats underwent the following assessments: (F) measurement of serum testosterone (n = 4 to 6 biological replicates), (G) estrous cycle analysis, and (H) H&E staining of representative ovaries showing cystic follicle or atretic follicle (asterisk), antral follicle (hash symbol), and corpora lutea or corpus albicans (arrow; scale bars, 500 mm). (I and J) The indicated female rats were paired with proven stud males for mating and evaluated for (I) uterine implantation and (J) the quantity of pups in the first litter (n = 4 to 5 biological replicates).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> thereafter, the, rats, underwent, the<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: CON_b1b54f | 证据: semantic:Conclusion
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Data in (F) and (J) were analyzed with one-way ANOVA with Bonferroni’s multiple comparisons test. **P < 0.01.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> data, in, f, and, j<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_40e701 | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Artemisinins limit testosterone production by reducing CYP11A1 To uncover the cellular pathways responsible for the decrease in androgen synthesis in- duced by artemisinins, we conducted mass spectrometry–based relative quantitative pro- teomics analysis on isolated theca-interstitial cells with or without ATM treatment.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> experimental_action<br>
+                        <strong>关键实体:</strong> artemisinins, limit, testosterone, production, by<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_e8d459 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node conclusion">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Conclusion</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">These results together suggested that up-regulating and down-regulating CYP11A1 determined testosterone production and that artemisinins affected testosterone production through CYP11A1.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> these, results, together, suggested, that<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: CON_3a689a | 证据: semantic:Conclusion
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">To validate the IP-MS results, we conducted co-immunoprecipitation (co-IP) as- say by precipitating CYP11A1-Flag and found that interaction between LONP1 and CYP11A1 was dramatically enhanced by ATM and SM934 induction, although precipitated CYP11A1 in the artemisinin-treated group was even lower than in control, primarily because of down-regulated CYP11A1 by artemisinin treatment (Fig. 4D).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> experimental_action<br>
+                        <strong>关键实体:</strong> to, validate, the, ip, ms<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_6f8853 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Testosterone in the cell supernatant under ATM [(B), n = 3 to 4 biological replicates per group] and SM934 treatment [(C), n = 5 per group] were quantified and normalized to the total protein content.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> testosterone, in, the, cell, supernatant<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_d41203 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Pregnenolone [(D), n = 4 per group)], progesterone [(E), n = 5 per group], and 17a-OHP [(F), n = 5 per group] were measured in ATM-treated cells.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> pregnenolone, d, n, 4, per<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_3695e9 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Pregnenolone [(G), n = 5 per group], progesterone [(H), n = 5 per group], and 17a-OHP [(I), n = 5 per group] were measured in SM934-treated cells. (J) Mouse ovarian theca- interstitial cells were treated with ATM (5 mM) for 48 hours, followed by MS- based quantitative proteomics analysis (n = 3 biological replicates).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> pregnenolone, g, n, 5, per<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_a56a62 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Volcano plots illustrate the significant (P < 0.05) alterations in protein expression induced by ATM. (K) Isolated mouse ovarian theca-interstitial cells were treated with varying doses of ATM, SM934, or ATS for 48 hours.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> volcano, plots, illustrate, the, significant<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_c087ac | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node conclusion">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Conclusion</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">These results were in concert with the aforementioned data showing that MG132 could restore the decreased CYP11A1 caused by artemisinins (Fig. 4B).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> these, results, were, in, concert<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: CON_27ad88 | 证据: semantic:Conclusion
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">To confirm whether LONP1 directly mediated the down-regulation of CYP11A1, we conducted in vitro protease assay using purified CYP11A1 and LONP1 proteins.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> experimental_action<br>
+                        <strong>关键实体:</strong> to, confirm, whether, lonp1, directly<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_1f66c2 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">The in vitro protease assay further confirmed that both ATM and SM934 accel- erated LONP1-catalyzed degradation of CYP11A1 (Fig. 5G).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> the, in, vitro, protease, assay<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_37c8e3 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Publicly available data from the Gene Ex- pression Omnibus (GEO, accession no.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> publicly, available, data, from, the<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_8083f3 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Consistent with this result, CYP11A1 was elevated in the ovaries of the PCOS-like mouse model established by hCG and insulin treatment (fig.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> consistent, with, this, result, cyp11a1<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_46c4de | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">These data together indi- cated that androgenic inducers blocked the association between LONP1 and CYP11A1, pro- moted CYP11A1 expression, and thus could ag- gravate androgen excess. (100 mg/kg/day) (n = 4 biological replicates). (M) Isolated ovarian theca-interstitial cells were treated with 5 mM ATM or SM934 for 48 hours, either with or without 0.5 mM pregnenolone.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> these, data, together, indi, cated<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_bb27f8 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Progesterone, 17a-OHP, and testosterone in the cell supernatant were measured and normalized to total protein (n = 4 to 5 biological replicates). (N) CYP11A1 was overexpressed in isolated ovarian theca-interstitial cells.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> progesterone, 17a, ohp, and, testosterone<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_a573b8 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Following a 48-hour incubation with 5 mM ATM or SM934, the testosterone in the cell supernatant was detected and normalized to total protein content (n = 3 to 5 biological replicates). (O) CYP11A1 expression was disrupted in ovarian theca-interstitial cells.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> following, a, 48, hour, incubation<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_81eec8 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Following a 48-hour incubation with 5 mM ATM or SM934, progesterone, 17a-OHP, and testosterone in cell supernatant were detected and normalized to total protein (n = 4 to 6 biological replicates).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> following, a, 48, hour, incubation<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_f42753 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Subsequently, we conducted a bio-ATS cap- ture assay and found that bio-ATS exhibited binding affinity toward the LONP1 protein in- stead of CYP11A1 (Fig. 6B and fig.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> experimental_action<br>
+                        <strong>关键实体:</strong> subsequently, we, conducted, a, bio<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_a66604 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">IP-MS was conducted to identify the artemisinin- responsive interacting proteins of CYP11A1. (D) HEK293T cells expressing specified protein were treated with 5 mM ATM or SM934 for 24 hours.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> ip, ms, was, conducted, to<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_40f0a0 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">IP was then conducted using Flag tag, followed by Western blot with a Myc antibody to detect the interacting LONP1. (E) In rat ovarian theca-interstitial cells treated with 5 mM ATM or SM934 for 24 hours, endogenous IP was conducted with an anti-CYP11A1 antibody, followed by Western blot with a LONP1 antibody to detect the LONP1- CYP11A1 interaction. (F) LONP1 was coexpressed with wild-type (WT) or mutant CYP11A1 in HEK293T cells.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> ip, was, then, conducted, using<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_6bbd43 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">LONP1 promotes the degradation of CYP11A1, leading to a reduction in androgen synthesis. (A) HEK293T cells stably expressing CYP11A1-Flag were subjected to LONP1-Myc overexpression and treated with MG132 for 8 hours, followed by detection and relative quantification of CYP11A1 by a Flag antibody and LONP1 by a Myc antibody. (B) HEK293T cells stably expressing CYP11A1- Flag were co-treated with 5 mM ATM and a specified dosage of CDDO-Me for 11 hours, then CYP11A1 was detected by a Flag antibody, and the blots were quantified (n = 3 biological replicates). (C) Isolated ovarian theca-interstitial cells were transfected with siNC or siLONP1 and treated with 5 mM ATM for 48 hours.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> lonp1, promotes, the, degradation, of<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_331487 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">CYP11A1 and CYP17A1 were detected and quantified from dependent experiments (n = 3 to 4 biological replicates). (D) CYP11A1 levels were detected and quantified (n = 3 biological replicates) by a Flag antibody in HEK293T cells overexpressing WT-LONP1 and LONP1 (S844A). (E) The half-life of CYP11A1 was measured and quantified in HEK293T cells overexpressing WT-LONP1 or LONP1 (S844A) with a Flag antibody. (F and G) Analysis of protease reactions for 3 hours (F) and indicated time course (G) using purified LONP1 (400 ng) and CYP11A1 (400 ng) in vitro under 5 mM artemisinin treatment. (H) Western blot analysis of CYP11A1 and its quantification in ovarian theca-interstitial cells following LONP1 overexpression through adenovirus (n = 3 biological replicates). (I to L) Pregnenolone (I), progesterone (J), 17a-OHP (K), and testosterone (L) in Liu et al., Science 384, eadk5382 (2024) Downloaded from https://www.science.org at Zhejiang University on May 19, 2025
+
+by the concept that compound binding can induce changes in protein conformation, there- by affecting thermal stability.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> cyp11a1, and, cyp17a1, were, detected<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_d0ec61 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Therapeutic effect of dihydroartemisinin in patients with PCOS Lastly, we performed a pilot clinical study to validate the efficacy of artemisinins in treating patients with PCOS.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> experimental_action<br>
+                        <strong>关键实体:</strong> therapeutic, effect, of, dihydroartemisinin, in<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_8eb5b2 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Treatment with dihydroartemisinin significantly (P < 0.0001) reduced serum testosterone among individu- als with PCOS (Fig. 7A).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> treatment, with, dihydroartemisinin, significantly, p<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_56352d | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Dihydroartemisinin treatment sig- nificantly (P < 0.0001) decreased the serum AMH (Fig. 7B).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> dihydroartemisinin, treatment, sig, nificantly, p<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_1f5a59 | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Addition- ally, regular menstrual cycles were restored in 63.16% (12/19) of all patients with PCOS (Fig. 7D and fig.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> addition, ally, regular, menstrual, cycles<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_d0dc0e | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">However, in the preventive experiments, we did not observe an obvious metabolic effect of artemisinins in PCOS-like mouse model, indicating that the effect of artemisinins in alleviating PCOS might not rely on the improvement of systemic met- The effect of artemisinins on steroidogenesis may be linked to their antimalaria function.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> however, in, the, preventive, experiments<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_71228f | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Recently, it was reported that infection- responsive malaria-associated pregnenolone the cell supernatant of ovarian theca-interstitial cells were measured and normalized to total protein content (n = 5 to 6 biological replicates). (M and N) LONP1 was overexpressed in the ovaries by intraperitoneal injection of AAV- LONP1 in mice. (M) CYP11A1 expression and its quantification in the ovaries (n = 3 biological replicates). (N) Serum testosterone was measured in LONP1- overexpressed and control mice (n = 4 to 5 biological replicates). (O) Publicly available data revealed LONP1 expression in theca cells derived from PCOS patients and healthy controls (GEO accession no.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> recently, it, was, reported, that<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_0514d2 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">GSE1615, n = 4 to 5 biological replicates).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> gse1615, n, 4, to, 5<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_7969f3 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Bar graph in (L) was analyzed with Mann-Whitney test. *P < 0.05, **P < 0.01, ***P < 0.001.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> bar, graph, in, l, was<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_69eaa2 | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node conclusion">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Conclusion</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Our findings indicate that artemisinins may serve as molecular-glue degraders that direct LONP1 to degrade CYP11A1.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> conclusive_statement<br>
+                        <strong>关键实体:</strong> our, findings, indicate, that, artemisinins<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: CON_6713dc | 证据: semantic:Conclusion
+                    </div>
+                </div>
+                
+                <div class="node conclusion">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Conclusion</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Here, we demonstrated that, in addition to ubiquitin ligase, molecular glues can also directly hijack proteases such as LONP1 to facilitate tar- get protein degradation by forming LONP1- substrateinteractions.Thisdegradationprogram may be responsive because it bypasses the ubiquitylation process.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> here, we, demonstrated, that, in<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: CON_93f16e | 证据: semantic:Conclusion
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Therapeutic effect of dihydroartemisinin in patients with PCOS. (A to D) Patients (n = 19) meeting all three PCOS diagnostic criteria were treated with oral dihydroartemisinin at a dosage of 40 mg three times daily for a duration of 12 weeks.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> therapeutic, effect, of, dihydroartemisinin, in<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_65db80 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Bar graphs in (A) to (C) were analyzed by paired t-test. **P < 0.01, ***P < 0.001.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> bar, graphs, in, a, to<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_67f2eb | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node conclusion">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Conclusion</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Our findings not only demonstrate the ther- apeutic effect of artemisinins on PCOS patients but also highlight their potential as molecular- glue degraders.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> conclusive_statement<br>
+                        <strong>关键实体:</strong> our, findings, not, only, demonstrate<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: CON_f39f26 | 证据: semantic:Conclusion
+                    </div>
+                </div>
+                
+                <div class="node conclusion">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Conclusion</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">To establish the PCOS-like model using DHEA, 4-week-old female mice or rats were subcutaneously injected daily with DHEA (60 mg/kg body weight) for indicated consecutive days.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> to, establish, the, pcos, like<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: CON_b85110 | 证据: semantic:Conclusion
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">The exclusion crit- eria were as follows: 1) Previous treatment with steroids within 3 months prior to en- rolment. 2) Patients with other diseases that can cause secondary polycystic ovaries, in- cluding 21-hydroxylase deficiency, prolacti- noma, hypothyroidism, Cushing’s syndrome, etc. 3) Pregnancy. 4) Patients with other serious diseases involving heart, liver, kidney, or other major organs. 5) Patients with any type of cancer.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> the, exclusion, crit, eria, were<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_9f8d32 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Informed consent was obtained from all par- ticipants before enrolment.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> informed, consent, was, obtained, from<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_a53e4e | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Cell culture and treatment To isolate theca-interstitial cells, ovaries dis- sected from female C57BL/6J mice (Gemphar- matech Co., Ltd) or rats (Shanghai SLAC Laboratory Animal Co., Ltd) aged 4 weeks were meticulously washed and then collected in Lebovitz’s L-15 medium (Gibco, Cat no. 11415-064) with 10% FBS (Gibco, Cat no. 10091- 148), 100 units/ml penicillin, and 0.1 mg/ml streptomycin.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> cell, culture, and, treatment, to<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_485511 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Blood glucose obtained from tail bleeds was monitored at 0, 30, 60, 90, and 120 min after insulin administration using a glucometer monitor (Roche).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> blood, glucose, obtained, from, tail<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_a99fe5 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">To detect hormone secretion in theca- interstitial cells, the cell culture supernatant was collected after a 48-hour treatment with artemisinins.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> to, detect, hormone, secretion, in<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_0ae035 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Hormone levels in cell culture supernatant were normalized to total protein content.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> hormone, levels, in, cell, culture<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_146b67 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">The proteins with differential expression (P < 0.05, fold change > 1.2, or fold change < 0.83) were listed in table S1.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> the, proteins, with, differential, expression<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_45b896 | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Following differentiation, the adipocytes were treated with insulin, androstenedione (A4) or ATM for 48 hours, after which testosterone levels in the cell culture supernatant were measured.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> following, differentiation, the, adipocytes, were<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_0cf26b | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Protease assays in vitro Purified recombinant LONP1 (400 ng) and CYP11A1 (400 ng) proteins were incubated in a reaction buffer (50 mM Tris-HCl [pH 8.2], 5 mM ATP, and 5 mM MgCl2) with or without 5 mM ATM or SM934 in a total volume of 20 ml.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> protease, assays, in, vitro, purified<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_23f17e | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">The analyte was measured using a two-fold serial dilution rang- ing in concentrations from 25 to 0.39 mM and injected for 120 s at a flow rate of 30 mL/min, followed by 150 s dissociation time.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> the, analyte, was, measured, using<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_642821 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Molecular docking of artemisinins with LONP1 The structural model of LONP1 was obtained from the Protein Data Bank (LONP1, PDB: 6WZV).</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> molecular, docking, of, artemisinins, with<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_54341d | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Statistical analysis All statistics were calculated using GraphPad Prism software.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> analytical_action<br>
+                        <strong>关键实体:</strong> statistical, analysis, all, statistics, were<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_a73ca6 | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">To compare more than two groups, the one-way ANOVA with Bonfer- roni test was used to analyze normally dis- tributed data; nonparametric statistical analysis for the data without a normal distribution was performed using the Kruskal-Wallis test with Dunn’s test for multiple comparisons.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> analytical_action<br>
+                        <strong>关键实体:</strong> to, compare, more, than, two<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_803650 | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">A two- way ANOVA with Bonferroni post hoc multi- ple comparison test was used for comparison between multiple groups with two fixed fac- tors, with P < 0.05 considered as statistically significant.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> analytical_action<br>
+                        <strong>关键实体:</strong> a, two, way, anova, with<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_f1f890 | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node analysis">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Analysis</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Statistical analysis used in each panel was described in the figure legends.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> analytical_action<br>
+                        <strong>关键实体:</strong> statistical, analysis, used, in, each<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: ANA_df4b1c | 证据: semantic:Analysis
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Franks, The management of patients with polycystic ovary syndrome.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> franks, the, management, of, patients<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_0b13f3 | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node dataset">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Dataset</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Nelson et al., The biochemical basis for increased testosterone production in theca cells propagated from patients with polycystic ovary syndrome.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> nelson, et, al, the, biochemical<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: DAT_1c972a | 证据: semantic:Dataset
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Hou et al., SM934, a water-soluble derivative of arteminisin, exerts immunosuppressive functions in vitro and in vivo.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> hou, et, al, sm934, a<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_310454 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Mukherjee, Regulation of ovarian steroidogenesis in vitro by gonadotropin in common carp Cyprinus carpio: Interaction between calcium- and adenylate cyclase-dependent pathways and involvement of ERK signaling cascade.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> mukherjee, regulation, of, ovarian, steroidogenesis<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_d320f6 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+                <div class="node experiment">
+                    <div class="node-type" style="font-weight: bold; font-size: 1.1em;">Experiment</div>
+                    <div class="node-text" style="margin: 8px 0; line-height: 1.4;">Kingsley et al., Structure-Based Design of Selective LONP1 Inhibitors for Probing In Vitro Biology.</div>
+                    <div class="semantic-info">
+                        <strong>语义角色:</strong> general<br>
+                        <strong>关键实体:</strong> kingsley, et, al, structure, based<br>
+                        <strong>置信度:</strong> 0.8
+                    </div>
+                    <div class="disambiguation">🔍 已应用语义消歧</div>
+                    <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
+                        ID: EXP_6cb3b1 | 证据: semantic:Experiment
+                    </div>
+                </div>
+                
+    </div>
+</body>
+</html>
+        

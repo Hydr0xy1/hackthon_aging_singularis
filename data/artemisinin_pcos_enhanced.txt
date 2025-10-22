@@ -1,0 +1,728 @@
+# PDF文档结构分析
+- 总页数: 17
+- 高质量页面: 13 (76.5%)
+- 包含摘要: 否
+- 包含参考文献: 否
+- 提取时间: 2025-10-22 00:32:59
+
+
+by mediating LONP1-CYP11A1 interaction
+Yang Liu†, Jing-jing Jiang†, Shao-yue Du†, Liang-shan Mu, Jian-jun Fan, Jun-chi Hu, Yao Ye,
+Meng Ding, Wei-yu Zhou, Qiu-han Yu, Yi-fan Xia, Hong-yu Xu, Yi-jie Shi, Shu-wen Qian, Yan Tang,
+Wei Li, Yong-jun Dang, Xi Dong, Xiao-ying Li, Cong-jian Xu, Qi-qun Tang*
+INTRODUCTION: Polycystic ovarian syndrome
+(PCOS), a prevalent reproductive endocrine disorder affecting 10 to 13% of women in their reproductive age, is characterized by hyperandrogenemia, ovulatory dysfunction, polycystic ovarian morphology, and often by associated metabolic disorders. Androgen excess is a key factor driving the phenotypic features of PCOS.
+Despite the high prevalence of PCOS, pharmasyndrome encounter substantial challenges.
+PCOS are limited and mainly tailored to management of specific symptoms. Consequently,
+development of innovative therapeutic strategies.
+RATIONALE: Artemisinin, derived from Artemisia plants, is widely recognized for its efficacy against malaria. We have previously demonpossess the capability to enhance energy exactivation of thermogenic adipocytes, thereby protecting against diet-induced obesity and metabolic disorders. In this study, we explored rodent PCOS-like models and human patients with PCOS by evaluating the effect of artemisinin derivatives on testosterone level, estrous cycle, and polycystic ovarian morphology. Using in vitro and in vivo approaches, we investigated the impact of artemisinins on ovarian testosterone synthesis. The direct target of artemisigoverning the regulation of testosterone synthesis by artemisinins.
+RESULTS: We found that artemisinin analog in hyperandrogenemia, irregular estrous cycles,
+polycystic ovarian morphology, and low fertility in the PCOS-like rodent models. Artemisinins ovarian testosterone synthesis. Relative quantiP450 family 11 subfamily A member 1 (CYP11A1),
+synthesis, as the most notably decreased protein affected by artemisinins. Further investigadegradation of CYP11A1, leading to the inhibition of ovarian androgen synthesis. This inof CYP11A1. Mechanistically, artemisinins directly targeted the lon peptidase 1 (LONP1), enhancing the interaction between LONP1 and
+CYP11A1 and promoting the LONP1-catalyzed degradation of CYP11A1. Conversely, androLONP1 and CYP11A1; additionally, LONP1 was down-regulated in PCOS, resulting in elevated
+CYP11A1 levels and increased androgen synthesis. Protein-docking simulations and subsethe inhibitory effect of artemisinins on CYP11A1 to the proteolytic domain of LONP1. Consistent with the function of artemisinins, LONP1 production in the ovary. Lastly, a pilot clinical effects of artemisinins in patients with PCOS.
+effectively ameliorated hyperandrogenemia, reduced anti-Müllerian hormone levels, improved polycystic ovarian morphology, and contributed
+CONCLUSION: Our data demonstrated the efand human patients. Artemisinins directly bind to LONP1, initiating the interaction between LONP1 and CYP11A1, which in turn promotes the degradation of CYP11A1, subseand curbing PCOS. Contrarily, androgenic inducer disrupts LONP1-CYP11A1 interaction and aggravates PCOS. Overall, our findings highas effective drugs for the comprehensive treatment of PCOS. This discovery illuminates a previously unknown interaction between LONP1 and CYP11A1 that is enhanced by artemisinins to govern androgen synthesis, opening avenues for PCOS intervention by targeting LONP1CYP11A1 interaction.▪
+The list of author affiliations is available in the full article online.
+*Corresponding author. Email: qqtang@shmu.edu.cn
+†These authors contributed equally to this work.
+Cite this article as Y. Liu et al., Science 384, eadk5382
+(2024). DOI: 10.1126/science.adh5382
+Artemisinins inhibit ovarian androgen synthesis and relieve PCOS. The pro-androgen inducer human chorionic gonadotropin (hCG) disrupts the interaction between LONP1 and CYP11A1, leading to the upregulation of CYP11A1, which promotes androgen production and exacerbates PCOS. Conversely, artemisinins mediate LONP1-CYP11A1 interaction, promoting the degradation of CYP11A1 and subsequently inhibiting ovarian androgen synthesis. Consequently, artemisinins show efficacy in ameliorating PCOS symptoms in both rodents and human patients [Figure created with BioRender.com].
+Liu et al., Science 384, 1187 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025 by mediating LONP1-CYP11A1 interaction
+Yang Liu1†, Jing-jing Jiang1†, Shao-yue Du2†, Liang-shan Mu3, Jian-jun Fan4, Jun-chi Hu4, Yao Ye3,
+Meng Ding1, Wei-yu Zhou1, Qiu-han Yu5, Yi-fan Xia1, Hong-yu Xu1, Yi-jie Shi1, Shu-wen Qian1,
+Yan Tang1, Wei Li5, Yong-jun Dang4, Xi Dong3, Xiao-ying Li1, Cong-jian Xu2, Qi-qun Tang1*
+Polycystic ovary syndrome (PCOS), a prevalent reproductive disorder in women of reproductive age, features androgen excess, ovulatory dysfunction, and polycystic ovaries. Despite its high prevalence, specific pharmacologic intervention for PCOS is challenging. In this study, we identified artemisinins as anti-PCOS agents. Our finding demonstrated the efficacy of artemisinin derivatives in alleviating PCOS symptoms in both rodent models and human patients, curbing hyperandrogenemia through suppression of ovarian androgen synthesis. Artemisinins promoted cytochrome P450 family 11 subfamily A member 1 (CYP11A1) protein degradation to block androgen overproduction.
+Mechanistically, artemisinins directly targeted lon peptidase 1 (LONP1), enhanced LONP1-CYP11A1 interaction, and facilitated LONP1-catalyzed CYP11A1 degradation. Overexpression of LONP1 replicated the androgen-lowering effect of artemisinins. Our data suggest that artemisinin application is a promising approach for treating PCOS and highlight the crucial role of the LONP1-CYP11A1 interaction in controlling hyperandrogenism and PCOS occurrence.
+olycystic ovarian syndrome (PCOS) is a complicated reproductive-metabolic disreproductive age, with a prevalence of
+10 to 13% (1–4). It encompasses diverse clinical symptoms, including hyperandrogenism, oligoovulation or anovulation, polycystic ovaries,
+and in many cases, metabolic disorders (5–8).
+phenotypic features of PCOS, such as follicular dysplasia, impaired ovulation, endometrial diseases, and metabolic dysfunction (9). In addition, prenatal androgen exposure induces
+PCOS-like traits in female offspring, heightPCOS (10). Consequently, controlling androgen excess is crucial to PCOS intervention.
+In women, androgens are primarily synthesized by the adrenal glands and ovaries. These cytochromes P450 (CYP) and hydroxysteroid dehydrogenase (HSD), including CYP family 11 subfamily A member 1 (CYP11A1), CYP17A1,
+HSD3B2, and HSD17B (11, 12). Within the ovary,
+androstenedione and testosterone are predomdiffuse into granulosa cells, where they are converted into estrogen by aromatase (CYP19A1)
+(11). Ovarian steroidogenesis is highly responsive
+(LH) or human chorionic gonadotropin (hCG).
+Numerous studies have demonstrated an increaseintheexpressionof CYP11A1and CYP17A1,
+as well as elevated enzyme activity of CYP17A1,
+HSD3B, and HSD17B in the ovarian theca cells of PCOS, resulting in elevated production of progesterone, 17a-hydroxyprogesterone (17aOHP), and testosterone (13–16). Therefore, insteroidogenesis-related enzymes may be efCurrently, pharmacologic interventions for specific symptoms. Few available drugs effectively target all aspects of PCOS. Combined oral contraceptives (COCs) are recommended for managing hyperandrogenism and/or irregPCOS. However, COCs do not improve infertility and polycystic ovary morphology. Moreover, COCs are often associated with side
+(17), which limit their long-term clinical application, particularly for PCOS patients with metabolic disorders. Artemisinin, a molecule isolated from Artemisia plants, exerts an antimalarial effect (18). We have previously demonstrated that artemisinin and its derivatives,
+including artemether (ATM), artesunate (ATS),
+and SM934, can promote energy expenditures and insulin sensitivity by activating thermogenic adipocytes (19), thereby protecting against high-fat diet–induced obesity and metabolic disorders. In this study, artemisinins were
+PCOS because they strongly inhibited ovarian androgen synthesis, reduced immature follicles, and improved the estrous cycle in both
+PCOS rodent models and patients.
+PCOS-like phenotype in rodent models development, we established a PCOS-like
+(DHEA) and simultaneously treated the mice with ATM, a type of artemisinin (Fig. 1, A and
+B). When administered simultaneously, ATM
+DHEA-treated mice, thereby preventing PCOSlike traits (Fig. 1C). The disrupted estrous cycle caused by DHEA was improved by ATM (Fig.
+1D). Ovaries from PCOS-like mice exhibited increased numbers of cyst-like follicles and corpus luteum, whereas the ovaries of ATMovarian follicles at different stages of development (Fig. 1E). Metabolic measurements revealed that ATM had no effect on body weight,
+fat mass, lean mass, hepatic steatosis, and glucose tolerance (fig. S1, A to D). ATM demsensitivity in DHEA-treated mice (fig. S1E),
+which is one of the indicators for PCOS alleviation (3), although there was no statistical difference. ATM reduced serum triglyceride
+(TG) in DHEA-induced mice (fig. S1F) but had no effect on total cholesterol (TC) and glucose levels (fig. S1, G and H). Additionally, ATM was safe, with no liver toxicity as indicated by unchanged alanine aminotransferase (ALT) and aspartate aminotransferase (AST) levels (fig. S1I).
+Building upon the observed preventive effect, the therapeutic effects of ATM were assessed. After establishment of a DHEA-induced
+PCOS-like model, mice were treated with varyinjections (Fig. 1F). ATM dose-dependently decreased serum testosterone (Fig. 1G), recovered normal estrous cycles (Fig. 1H), inhibited uterus edema (Fig. 1I), and dramatically reduced cystic follicles in the ovaries (Fig. 1J).
+upon oral administration of ATM (Fig. 1, K to O).
+Next, we investigated the anti-PCOS effect of ATM in a rat model (Fig. 2A). Intraperitoneal injection of 15 mg/kg ATM sufficed to
+1Key Laboratory of Metabolism and Molecular Medicine of the
+Ministry of Education, Department of Biochemistry and
+Hospital, Fudan University, Shanghai 200032, China.
+2Shanghai Key Laboratory of Female Reproductive Endocrine
+Related Disease, Obstetrics and Gynecology Hospital, Fudan
+University, Shanghai 200032, China. 3Reproductive Medicine
+Center, Zhongshan Hospital, Fudan University, Shanghai
+200032, China. 4Basic Medicine Research and Innovation
+Center for Novel Target and Therapeutic Intervention,
+Ministry of Education, Institute of Life Sciences, the Second
+Affiliated Hospital of Chongqing Medical University,
+Chongqing Medical University, Chongqing 400010, China.
+5Department of Medicinal Chemistry, School of Pharmacy,
+China Pharmaceutical University, Nanjing, Jiangsu
+211198, China.
+*Corresponding author. Email: qqtang@shmu.edu.cn
+†These authors contributed equally to this work.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025 decrease serum testosterone in PCOS-like rats to levels similar to those of control rats (Fig.
+2B) and to alleviate the disrupted estrous cycles (Fig. 2C). Ovarian histological analysis revealed that ATM reversed the oligo-ovulatory phenotype in DHEA-treated rats, as indicated and a decrease in cyst-like follicles (Fig. 2D).
+Similarly, oral administration of ATM also repressed PCOS-like manifestations in the rat model (fig. S2, A to C).
+The findings were further validated in another PCOS-like rat model established by insulin and hCG injections (Fig. 2E), both of which are robust inducers of androgen production.
+ATM treatment significantly (P = 0.0026)
+decreased serum testosterone in PCOS-like rats (Fig. 2F), totally normalized estrous cycles
+(Fig. 2G), inhibited polycystic ovary morphology, and increased the presence of postovulation corpora lutea (Fig. 2H). Fertility tests showed that ATM dramatically enhanced embryo implantation (Fig. 2I) and significantly
+(P = 0.0039) elevated the litter size in PCOSlike rats (Fig. 2J). Collectively, the key features of PCOS, including elevated serum testosterone, irregular estrous cycle, polycystic ovarian
+Fig. 1. Identification of ATM as an anti-PCOS agent in mouse model. (A) Chemical structures of artemether (ATM), SM934, and artesunate
+(ATS). (B) Four-week-old female mice received subcutaneous DHEA injections (60 mg/kg/day)
+(30 mg/kg/day) for 60 days. Subsequently, the mice were assessed for (C) serum testosterone
+(n = 6 to 12 biological replicates of mice),
+(D) estrous cycle analysis, and (E) hematoxylin and eosin (H&E) staining of representative ovaries showing cystic follicle or atretic follicle (asterisk),
+antral follicle (hash symbol), and corpora lutea or corpus albicans (arrow; scale bars, 200 mm).
+(F) After the establishment of a DHEA-induced
+(60 mg/kg/day) PCOS-like model, mice were administered varying dosages of ATM (30 mg/
+kg/day and 60 mg/kg/day) via intraperitoneal injection and then evaluated for (G) serum testosterone (n = 6 per group), (H) estrous cycle analysis,
+(I) morphology of uterus, and (J) H&E staining of atretic follicle (asterisk), antral follicle (hash symbol),
+and corpora lutea or corpus albicans (arrow; scale bars, 200 mm). (K) After establishment of DHEAinduced (60 mg/kg/day) PCOS-like model, the
+(100 mg/kg/day) and were then assessed for
+(L) serum testosterone (n = 6 to 8 per group),
+(M) estrous cycle analysis, (N) morphology of uterus, and (O) H&E staining of representative
+(asterisk), antral follicle (hash symbol), and corpora lutea or corpus albicans (arrow; scale bars, 200 mm). P, proestrus; E, estrus; M, metestrus;
+D, diestrus. Data are presented as mean ± SD.
+Data in (C) were analyzed with Kruskal-Wallis test. Data in (G) and (L) were analyzed with
+Brown-Forsythe and Welch analysis of variance
+(ANOVA) tests with Tamhane’s T2 multiple comparisons test. *P < 0.05, **P < 0.01.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025
+
+Fig. 2. ATM reverses the PCOS-like phenotype in a rat model. (A) Four-week-old female rats were subcutaneously injected with DHEA (60 mg/kg/day) to establish a PCOS-like model and then received intraperitoneal treatments of ATM (15 mg/kg/
+day and 30 mg/kg/day). Subsequently, the rats were assessed for (B) serum testosterone (n = 3 to 6 biological replicates), (C) estrous cycle analysis, and (D) H&E staining of representative ovaries showing cystic follicle or atretic follicle (asterisk),
+antral follicle (hash symbol), and corpora lutea or corpus albicans (arrow; scale bars,
+500 mm). (E) Four-week-old female rats were subcutaneously injected with hCG and insulin to establish a PCOS-like model and then received intraperitoneal treatments of ATM (30 mg/kg/day). Thereafter, the rats underwent the following assessments:
+(F) measurement of serum testosterone (n = 4 to 6 biological replicates), (G) estrous cycle analysis, and (H) H&E staining of representative ovaries showing cystic follicle or atretic follicle (asterisk), antral follicle (hash symbol), and corpora lutea or corpus albicans (arrow; scale bars, 500 mm). (I and J) The indicated female rats were paired with proven stud males for mating and evaluated for (I) uterine implantation and (J) the quantity of pups in the first litter (n = 4 to 5 biological replicates).
+P, proestrus; E, estrus; M, metestrus; D, diestrus. Data are presented as mean ± SD.
+Data in (B) were analyzed with Brown-Forsythe and Welch ANOVA tests with Tamhane’s
+T2 multiple comparisons. Data in (F) and (J) were analyzed with one-way ANOVA with Bonferroni’s multiple comparisons test. **P < 0.01.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025 morphology, and low fertility, were improved by ATM treatment in rodent models.
+artemisinins in modulating androgen synthesis. The hypothalamus-pituitary-ovary axis plays production (20). Therefore, we initially determined follicle-stimulating hormone (FSH)
+and LH, which are upstream hormones controlling the synthesis of steroid hormones, including progesterone, androgens, and estrogen
+(20). ATM displayed no impact on FSH and
+LH, whether administered intraperitoneally or orally in the PCOS-like models (fig. S3, A to F), implying that gonadotropin generation might remain unaltered by ATM. We therefore hypothesized that artemisinins regulated testosterone levels by targeting the ovary. To assess this, we measured steroid hormones in the supernatant of isolated ovarian thecainterstitial cells, which are a major source of with PCOS (Fig. 3A) (11). ATM significantly
+(1 mM versus 0 mM, P = 0.0298; 5 mM versus
+0, P = 0.0011; 10 mM versus 0, P = 0.0007)
+inhibited testosterone production in thecainterstitial cells in a dose-dependent manner
+(Fig. 3B). Similarly, SM934, also an artemisinin analog (21), showed inhibitory effects on tesby ATM (Fig. 3C). In addition to reducing testosterone, ATM and SM934 also obviously reduced pregnenolone, progesterone, and 17a-OHP,
+steroidogenesis and the precursors of testosterone (Fig. 3, D to I). This observation was derivative, artesunate (ATS), which likewise dose-dependently suppressed pregnenolone,
+progesterone, and 17a-OHP (fig. S4, A to C).
+Moreover, this inhibitory effect was not due impair the viability of theca-interstitial cells (fig.
+S5, A and B). These data strongly suggested ovarian theca-interstitial cells.
+Adipose tissue prominently expresses aldoketoreductase type 1C3 (AKR1C3), converting androstenedione (A4) to testosterone (22, 23).
+In conditions such as PCOS or obesity, elevated
+AKR1C3 in subcutaneous fat, possibly induced by increased insulin, endows adipose tissue
+(22, 23). However, ATM did not affect testosthe basal state and under insulin or A4 treatment (fig. S5C). Similarly, ATM showed no adipocytes (fig. S5D). Consistently, testosterone unchanged by ATM treatment (fig. S5E).
+reducing CYP11A1 for the decrease in androgen synthesis induced by artemisinins, we conducted mass spectrometry–based relative quantitative proteomics analysis on isolated theca-interstitial cells with or without ATM treatment. CYP11A1 was the most significantly (P = 0.00000533)
+down-regulated protein induced by ATM (Fig.
+3J). CYP11A1 catalyzes the conversion from cholesterol to pregnenolone, which is the initial step of steroid hormone biosynthesis (12).
+The down-regulation of CYP11A1 by ATM costep, as evidenced by the decreased pregnenolone (Fig. 3D and G). To validate the proteomics data, we detected the expression of steroidogenic enzymes in theca-interstitial cells from mice and rats, with the results that artemisinins dose-dependently down-regulated
+CYP11A1 protein (Fig. 3K and fig. S6, A to C),
+whereas they did not affect HSD3B2 and
+CYP17A1 (Fig. 3K). The decline in CYP11A1 protein initiated at the 8th-hour post-ATM treatment (fig. S6D). Consistently, CYP11A1 proteins were dramatically reduced by ATM in the ovaries of PCOS-like mice (Fig. 3L). Furthermore,
+CYP11A1 was also down-regulated by artemisinins in human BeWo choriocarcinoma cells, which are human placenta–derived and cansynthesize steroid hormones (fig. S6E). ATM treatment did
+(StAR) protein (fig. S6F), which is essential for steroid hormone formation (24).
+Next, we proceeded to elucidate whether the decrease in CYP11A1 mediated the inhibsynthesis. First, we supplemented artemisinin-treated theca-interstitial cells with pregnenolone, which is the product of CYP11A1 catalytic reaction and reduced by artemisinins (Fig. 3A), with the results that pregnenthe decreased progesterone, 17a-OHP, and testosterone induced by artemisinins (Fig. 3M).
+We then manipulated the expression of CYP11A1 and found that overexpression of CYP11A1 artemisinin-treating cells (Fig. 3N). When
+CYP11A1 expression was disrupted, artemisinins were unable to further reduce the production of progesterone, 17a-OHP, and testosterone (Fig. 3O). These results together suggested that up-regulating and down-regulating CYP11A1 through CYP11A1.
+LONP1 and CYP11A1
+Wethenaimedtoexplorethemechanismunderlying the regulation of CYP11A1 by artemisinins.
+and demonstrate antimalarial activity by generating reactive oxygen species (ROS) (25), it the down-regulation of CYP11A1, because the
+ROS inducer elesclomol had no detectable effect on CYP11A1 (fig. S7A). Consistently, ROSscavenger N-Acetyl-L-cysteine (NAC) did not affect the ATM-induced down-regulation of
+CYP11A1 (fig. S7B). Additionally, despite the reduction in protein levels induced by artemisinins,
+themRNAofCyp11a1inisolated theca-interstitial cells (fig. S7, C and D) or DHEA-induced ovaries (fig. S7, E and F) remained unaffected by artemisinins, indicating posttranscriptional regulation by artemisinins. Subsequently, we examined the stability of CYP11A1 and found that the half-life of CYP11A1 protein was obviously shortened by ATM and SM934 (Fig. 4A and fig.
+S8A). Further study showed that the protease inhibitor MG132 rescued the down-regulation of CYP11A1 induced by ATM and SM934 (Fig.
+4B and fig. S8B), which collectively indicated that artemisinins reduced CYP11A1 levels by repressing its protein stability.
+artemisinin-induced instability of CYP11A1, we mass spectrometry (IP-MS) to identify the interacting partners of CYP11A1 under ATM or
+SM934 treatment (Fig. 4C). On the basis of the
+IP-MS data, we identified 8 proteins that interacted with CYP11A1 specifically under ATM treatment and 23 proteins that did so under
+SM934 treatment. Among these proteins, two groups, namely lon peptidase 1 (LONP1) and trafficking from ER to Golgi regulator (TFG)
+(Fig. 4C). LONP1 is an AAA+ mitochondrial protease and functions by utilizing ATP hydrolysis to degrade misfolded or oxidized proteins, which is crucial in protein quality control in mitochondria (26). TFG is a COPII vesiclerelated protein that regulates ER to Golgi transport (27). To validate the IP-MS results, we conducted co-immunoprecipitation (co-IP) assay by precipitating CYP11A1-Flag and found that interaction between LONP1 and CYP11A1 was dramatically enhanced by ATM and SM934 induction, although precipitated CYP11A1 in the artemisinin-treated group was even lower than in control, primarily because of down-regulated
+CYP11A1 by artemisinin treatment (Fig. 4D).
+By contrast, TFG-CYP11A1 interaction could be slightly augmented by ATM but not SM934
+(fig. S9A). Subsequent investigations revealed that LONP1 overexpression dramatically downregulated CYP11A1 (fig. S9B), whereas TFG had no effect on it (fig. S9C). These data together suggested that LONP1 but not TFG might be
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025
+
+Fig. 3. Artemisinins inhibit ovarian steroidogenesis and testosterone production through down-regulation of CYP11A1. (A) Schematic diagram of ovarian testosterone production. (B to I) Mouse ovarian theca-interstitial cells were treated with various dosages of ATM or SM934 for 48 hours.
+Testosterone in the cell supernatant under ATM [(B), n = 3 to 4 biological replicates per group] and SM934 treatment [(C), n = 5 per group] were quantified and normalized to the total protein content. Pregnenolone [(D),
+n = 4 per group)], progesterone [(E), n = 5 per group], and 17a-OHP [(F),
+n = 5 per group] were measured in ATM-treated cells. Pregnenolone [(G), n = 5 per group], progesterone [(H), n = 5 per group], and 17a-OHP [(I), n = 5 per group] were measured in SM934-treated cells. (J) Mouse ovarian thecainterstitial cells were treated with ATM (5 mM) for 48 hours, followed by MSbased quantitative proteomics analysis (n = 3 biological replicates). Volcano plots illustrate the significant (P < 0.05) alterations in protein expression induced by ATM. (K) Isolated mouse ovarian theca-interstitial cells were treated with varying doses of ATM, SM934, or ATS for 48 hours. Representative
+Western blot analysis of CYP11A1, CYP17A1, and HSD3B2. CYP11A1 quantification,
+normalized to the loading control, was calculated on the basis of three repeated experiments. (L) Western blot analysis and relative quantification of CYP11A1 and
+CYP17A1 in the ovary from mice receiving intragastric administration of ATM
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025 involved in regulating CYP11A1 protein levels.
+Endogenous co-IP further validated that binding affinity between LONP1 and CYP11A1 was augmented by ATM and SM934 (Fig. 4E and fig. S9, D and E). A pull-down assay with purifiedrecombinantproteinsofLONP1andCYP11A1 proteins (fig. S9F). Taken together, these data
+CYP11A1-LONP1 association, acting like “molecular glues,” a class of small molecules that induce or stabilize interactions between proteins (28).
+LONP1 and CYP11A1 that mediated their interaction. Protein-protein docking predicted that residues W56 to S66 or F252 to T259 in
+CYP11A1 might serve as the binding site for
+LONP1. We therefore generated mutant forms of CYP11A1 with deletion of either W56 to S66
+(DW56-S66) or F252 to T259 (DF252-T259)
+and found that DW56-S66 retained the ability to interact with LONP1, whereas DF252-T259 lost the capacity to bind to LONP1 (Fig. 4F),
+suggesting that the region F252 to T259 in
+CYP11A1 was essential for CYP11A1-LONP1 interaction. To define the domain in LONP1 responsible for binding to CYP11A1, we expressed the N-domain, adenosine triphosphatase (ATPase) domain, and proteolytic domain of LONP1. Because LONP1 is a mitochondrial protein, we fused all the truncated domains
+(MTS) of LONP1 to ensure their import into the mitochondria (Fig. 4G). Unexpectedly, all the domains of LONP1 exhibited strong interactions with CYP11A1, without domain selectivity (Fig. 4H).
+LONP1 promotes CYP11A1 degradation and
+Having established that artemisinins augmented CYP11A1-LONP1 interaction, we then sought to investigate the role of LONP1 in artemisinin-induced CYP11A1 degradation.
+LONP1 overexpression reduced CYP11A1 levels,
+which were rescued by MG132 (Fig. 5A), which
+LONP1 (29). These results were in concert with the aforementioned data showing that MG132 could restore the decreased CYP11A1 caused by artemisinins (Fig. 4B). Additionally, the reduced CYP11A1 expression caused by ATM was reversed by the inhibitor of LONP1, methyl ester derivative of 2-cyano-3,12-dioxo-oleana1,9(11)-dien-28-oic acid (CDDO-Me) (30) (Fig.
+5B). Knockdown of LONP1 in theca-interstitial
+(siRNAs) completely reversed the decreased
+CYP11A1 induced by ATM (Fig. 5C). In LONP1deficient cells, ATM had little effect on the down-regulation of CYP11A1 (Fig. 5C). By contrast, CYP17A1 remained unaffected by both
+ATM and LONP1 (Fig. 5C). Subsequently, we generated catalytically inactive LONP1 (LONP1S844A) with an S844A (S844→A) substitution for protein degradation (31, 32). LONP1-S844A failed to diminish CYP11A1 expression (Fig.
+5D) or shorten the half-life of CYP11A1 protein (Fig. 5E) like the WT LONP1 did, indicating that LONP1 decreased CYP11A1 through its protease activity. To confirm whether LONP1 directly mediated the down-regulation of
+CYP11A1, we conducted in vitro protease assay using purified CYP11A1 and LONP1 proteins.
+The presence of ATP was necessary for LONP1’s function. Our results showed that ATM promoted the LONP1-catalyzed degradation of
+CYP11A1 (Fig. 5F), whereas in the absence of
+LONP1 or ATP, ATM had no effect on CYP11A1
+(Fig. 5F). The in vitro protease assay further confirmed that both ATM and SM934 accelerated LONP1-catalyzed degradation of CYP11A1
+(Fig. 5G). Besides, the mutant form of CYP11A1
+(DF252-T259), which failed to bind with LONP1,
+exhibited resistance to the down-regulation induced by artemisinins (fig. S9, G and H).
+indispensable role of LONP1 in mediating the reduction of CYP11A1 induced by artemisinins.
+Additionally, we found that both LONP1 and
+CYP11A1 were highly expressed in ovaries (fig.
+S9I), and they are known to be localized in mitochondria (12, 33). The similar tissue disthe possibility that LONP1 could target CYP11A1 in response to artemisinin treatment.
+In addition to LONP1, the ClpXP complex,
+another important protease machinery in mitocontrol (34), was also examined for its involvement in regulating CYP11A1. ClpXP consists of two distinct components, an AAA+ ATPase
+(34). Overexpression of both ClpP and ClpX had no impact on CYP11A1 protein (fig. S10A).
+Additionally, no binding was observed between CYP11A1 and either ClpP or ClpX, and
+(fig. S10B). These findings rule out the possibility of ClpXP in mediating CYP11A1 degradation.
+Next, we assessed the impact of LONP1 on ovarian androgen synthesis. Adenovirusmediated overexpression of LONP1 in thecainterstitial cells or BeWo cells down-regulated
+CYP11A1 protein (Fig. 5H and fig. S11A). As a consequence of decreased CYP11A1, the supernatant levels of pregnenolone, progesterone,
+17a-OHP, and testosteronefrom theca-interstitial cells were considerably reduced by LONP1 overexpression (Fig. 5, I to L). Consistent with this,
+overexpression of LONP1 in BeWo cells also yielded a reduction in steroidogenesis (fig. S11,
+B and C). We also overexpressed LONP1 in adeno-associated virus (AAV)–LONP1, with the results that LONP1 reduced CYP11A1 (Fig. 5M)
+and concomitantly inhibited the serum testosterone (Fig. 5N). These data together suggested that overexpression of LONP1 replicated the androgen-lowering effect of artemisinins.
+Publicly available data from the Gene Expression Omnibus (GEO, accession no. GSE1615)
+indicated that LONP1 expression levels in theca cells from PCOS patients were significantly (P =
+0.0104) lower as compared with levels found in normal theca cells (Fig. 5O) (35), which was in line with the inhibitory effect of LONP1 on
+CYP11A1 and androgen synthesis. We further examined the CYP11A1-LONP1 association in response to androgen inducers, such as hCG
+(36). In contrast to the promoting effect of artemisinins on CYP11A1-LONP1 interaction,
+hCG markedly disrupted their interaction (fig.
+S12A). Consequently, hCG treatment promoted
+CYP11A1 levels and reversed the decreased
+CYP11A1 caused by LONP1 overexpression (fig.
+S12B). Consistent with this result, CYP11A1 was elevated in the ovaries of the PCOS-like treatment (fig. S12C). Furthermore, dihydrotestosterone (DHT), one type of androgen, also recovered the decreased CYP11A1 caused by
+LONP1 (fig. S12D). These data together indiassociation between LONP1 and CYP11A1, promoted CYP11A1 expression, and thus could aggravate androgen excess.
+(100 mg/kg/day) (n = 4 biological replicates). (M) Isolated ovarian theca-interstitial cells were treated with 5 mM ATM or SM934 for 48 hours, either with or without
+0.5 mM pregnenolone. Progesterone, 17a-OHP, and testosterone in the cell supernatant were measured and normalized to total protein (n = 4 to 5 biological replicates). (N) CYP11A1 was overexpressed in isolated ovarian theca-interstitial cells. Following a 48-hour incubation with 5 mM ATM or SM934, the protein content (n = 3 to 5 biological replicates). (O) CYP11A1 expression was disrupted in ovarian theca-interstitial cells. Following a 48-hour incubation with
+5 mM ATM or SM934, progesterone, 17a-OHP, and testosterone in cell supernatant were detected and normalized to total protein (n = 4 to 6 biological replicates).
+Data are presented as mean ± SD. Bar graphs in (B) to (F), (H) and (I), and (M) to
+(O) were analyzed with one-way ANOVA with Bonferroni’s multiple comparisons test. Data in (G) were analyzed with Kruskal-Wallis test with Dunn’s multiple comparison test. Data in (L) were analyzed with two-tailed unpaired Student’s t-test.
+*P < 0.05; **P < 0.01; ***P < 0.001.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025
+
+LONP1 is the direct target of artemisinins
+We then sought to ascertain whether artemisinins directly targeted LONP1 or CYP11A1. To this end, biotin was conjugated to artesunate
+(bio-ATS) for the pull-down assay (Fig. 6A). We confirmed that bio-ATS effectively reduced
+CYP11A1 (fig. S13A), indicating that the biotin attachment did not affect the function of ATS.
+Subsequently, we conducted a bio-ATS capture assay and found that bio-ATS exhibited binding affinity toward the LONP1 protein instead of CYP11A1 (Fig. 6B and fig. S13B). Preincubation with free ATS, ATM, or SM934 occupied LONP1 and disrupted the interaction between bio-ATS and LONP1 (Fig. 6B). Furthermore, the thermal stability assay provided artemisinins and LONP1 (Fig. 6C), supported
+Fig. 4. Artemisinins enhance the interaction between LONP1 and CYP11A1.
+(A) Isolated ovarian theca-interstitial cells pretreated with 5 mM ATM were incubated with cycloheximide (CHX) for indicated time, followed by analysis of the half-life of CYP11A1 protein. (B) Isolated ovarian theca-interstitial cells were treated with 5 mM
+ATM or SM934 for 12 hours, in either the presence or absence of MG132, followed by detection of CYP11A1. (C) CYP11A1 was stably overexpressed in human embryonic kidney 293T (HEK293T) cells. IP-MS was conducted to identify the artemisininresponsive interacting proteins of CYP11A1. (D) HEK293T cells expressing specified protein were treated with 5 mM ATM or SM934 for 24 hours. IP was then conducted using Flag tag, followed by Western blot with a Myc antibody to detect the interacting LONP1. (E) In rat ovarian theca-interstitial cells treated with 5 mM ATM or SM934 for 24 hours, endogenous IP was conducted with an anti-CYP11A1 antibody, followed by Western blot with a LONP1 antibody to detect the LONP1CYP11A1 interaction. (F) LONP1 was coexpressed with wild-type (WT) or mutant
+CYP11A1 in HEK293T cells. IP was then conducted using Flag tag, followed by detection of the interacted LONP1 by Western blot with Myc antibody. Single-letter abbreviations for the amino acid residues are as follows: A, Ala; D, Asp; F, Phe;
+G, Gly; K, Lys; P, Pro; S, Ser; T, Thr; and W, Trp. (G) Different domains
+(N, N-domain; A, ATPase domain; P, proteolytic domain) were expressed in HEK293T cells that stably overexpressed CYP11A1. (H) IP was conducted with Flag tag,
+followed by detection of the interacting LONP1 domains with a Myc antibody. The experiments in (A), (B), and (D) to (H) were repeated at least two to three times.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025
+
+Fig. 5. LONP1 promotes the degradation of CYP11A1, leading to a reduction in androgen synthesis. (A) HEK293T cells stably expressing CYP11A1-Flag were subjected to LONP1-Myc overexpression and treated with MG132 for 8 hours,
+followed by detection and relative quantification of CYP11A1 by a Flag antibody and LONP1 by a Myc antibody. (B) HEK293T cells stably expressing CYP11A1Flag were co-treated with 5 mM ATM and a specified dosage of CDDO-Me for 11 hours, then CYP11A1 was detected by a Flag antibody, and the blots were quantified (n = 3 biological replicates). (C) Isolated ovarian theca-interstitial cells were transfected with siNC or siLONP1 and treated with 5 mM ATM for
+48 hours. CYP11A1 and CYP17A1 were detected and quantified from dependent experiments (n = 3 to 4 biological replicates). (D) CYP11A1 levels were detected and quantified (n = 3 biological replicates) by a Flag antibody in HEK293T cells overexpressing WT-LONP1 and LONP1 (S844A). (E) The half-life of CYP11A1 was measured and quantified in HEK293T cells overexpressing WT-LONP1 or
+LONP1 (S844A) with a Flag antibody. (F and G) Analysis of protease reactions for
+3 hours (F) and indicated time course (G) using purified LONP1 (400 ng)
+and CYP11A1 (400 ng) in vitro under 5 mM artemisinin treatment. (H) Western blot analysis of CYP11A1 and its quantification in ovarian theca-interstitial cells following LONP1 overexpression through adenovirus (n = 3 biological replicates).
+(I to L) Pregnenolone (I), progesterone (J), 17a-OHP (K), and testosterone (L) in
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025 induce changes in protein conformation, thereby affecting thermal stability. By contrast, ATM had no impact on the thermal stability of CYP11A1
+(fig. S13C). These data collectively suggested that LONP1, rather than CYP11A1, is the direct target of artemisinins.
+to its target, a protein structure–based docking calculation was carried out with a 2.51-Å resolution structure of LONP1 (PDB entry: 6WZV)
+(37) by using Glide v8.1. Artemisinin derivative proteolyticdomainofLONP1(Fig.6D).Bortezomib is a known inhibitor of LONP1 (37). We observed that bortezomib augmented CYP11A1 levels and reversed the decreased CYP11A1 induced by LONP1 (fig. S13D). This finding led was accurate, bortezomib might compete with artemisinin for binding to LONP1. We therefore conducted a bio-ATS capture assay and disthe interaction between bio-ATS and LONP1 (fig.
+S13E). In concert with the competition between
+LONP1, bortezomib completely rescued the decreased CYP11A1 caused by artemisinins (fig.
+S13F). Considering that the predicted bindthe proteolytic domain of LONP1, we prothe binding affinity of artemisinins to it. Surface plasmon resonance (SPR) revealed that a dissociation constant (KD) of 3.11 ± 0.358 mM
+(Fig. 6E), SM934 exhibited a binding affinity with a KD of 8.69 ± 0.749 mM (Fig. 6F), and
+KD of 0.261 ± 0.029 mM (Fig. 6G). The interaction between proteolytic domain of LONP1 and CYP11A1 was augmented by artemisinin analog SM934 (Fig. 6H). We then generated a mutant form of LONP1 with a deletion of residues G847 to D852 (DGATPKD). These resiof LONP1-artemisinin binding, according to our docking data. The mutant DGATPKD LONP1 retained its capacity to interact with CYP11A1,
+similarly to WT LONP1, but it conferred resistance to artemisinins, as indicated by the obserinteraction between DGATPKD LONP1 and
+CYP11A1 (Fig. 6I). To functionally evaluate the contribution of the GATPKD motif of LONP1 to artemisinin-induced CYP11A1 degradation, we generated LONP1 knockout cells and reconstituted them with either WT LONP1 or the mutant
+DGATPKD LONP1. Loss of LONP1 up-regulated
+CYP11A1 compared with the results for control cells. Reconstitution with either WT or mutant
+LONP1 successfully reversed the increased
+CYP11A1, indicating that mutant LONP1 still preserveditsproteaseactivitytodegradeCYP11A1
+(Fig. 6J). When these cells were treated with artemisinins, CYP11A1 was down-regulated in the
+LONP1 knockout cells. Reintroduction of WT
+LONP1 restored the inhibitory effect of artemisinins on CYP11A1, whereas reintroduction of mutant LONP1 failed to reverse the artemisinin-induced down-regulation of CYP11A1
+(Fig. 6J), which could result primarily from the mutant LONP1’s inability to bind to artemisinins. It was worth noting that the GATPKD residues in LONP1 were highly conserved across different species (fig. S13G), supporting the obcells. Collectively, these data supported the on CYP11A1 level was largely dependent on its binding to the proteolytic domain of LONP1.
+Lastly, we performed a pilot clinical study to patients with PCOS. Nineteen individuals with
+PCOS [female, age: 27.79 ± 3.74 years; weight:
+62.1 ± 8.9 kg; body mass index (BMI): 23.23 ±
+2.30 kg/m2] who met all three Rotterdam PCOS with oral dihydroartemisinin (40 mg, thrice daily) for 12 weeks. All the participants exhibited hyperandrogenemia, oligomenorrhea,
+or amenorrhea, and polycystic ovary appearance before treatment. Dihydroartemisinin was well tolerated and no side effects were observed in any of the participants. Treatment with dihydroartemisinin significantly (P < 0.0001)
+reduced serum testosterone among individuals with PCOS (Fig. 7A). Anti-Müllerian hormone (AMH) is mainly produced by granulosa in the ovary. Serum AMH levels strongly corpatients (3). Dihydroartemisinin treatment significantly (P < 0.0001) decreased the serum
+AMH (Fig. 7B). Consistent with this result, a after dihydroartemisinin treatment was observed on ultrasonography (Fig. 7C). Additionally, regular menstrual cycles were restored in
+63.16% (12/19) of all patients with PCOS (Fig.
+7D and fig. S14). Together, dihydroartemisinin effectively ameliorated the hyperandrogenemia, improved polycystic ovarian morphology,
+and contributed to the normalization of menstruation in PCOS patients.
+Artemisinin has shown great promise in various applications with minimum adverse effects, such as treating malaria, cold, diarrhea,
+lupus erythematosus, and cancer (18). Increasantimalaria function of artemisinins (38, 39).
+The endoperoxide moiety in artemisinins reacts with the iron in heme to produce ROS,
+or tumor cells. Several targets of artemisinins have been proposed, including PfPI3K and
+PfATP6 in malaria parasites (40, 41) and gephyrin in mammalian cells (42). Nevertheless,
+intervention. Emerging evidence suggests that in PCOS development, including impaired thermogenic adipose tissue (43), the microbiota-gutovary axis (44), and systemic insulin resistance
+(45). Our previous findings showed that arteprotected against obesity (19), which prompted regulate PCOS development. In this study, we to the reproductive endocrine in the PCOS-like rodent models and patients, with efficacy against hyperandrogenism, irregular estrous cycles, and polycystic ovaries. However, in the preventive experiments, we did not observe an
+PCOS-like mouse model, indicating that the not rely on the improvement of systemic metabolic state.
+may be linked to their antimalaria function.
+Recently, it was reported that infectionresponsive malaria-associated pregnenolone the cell supernatant of ovarian theca-interstitial cells were measured and normalized to total protein content (n = 5 to 6 biological replicates). (M and
+N) LONP1 was overexpressed in the ovaries by intraperitoneal injection of AAVLONP1 in mice. (M) CYP11A1 expression and its quantification in the ovaries
+(n = 3 biological replicates). (N) Serum testosterone was measured in LONP1overexpressed and control mice (n = 4 to 5 biological replicates). (O) Publicly available data revealed LONP1 expression in theca cells derived from PCOS patients and healthy controls (GEO accession no. GSE1615, n = 4 to 5 biological replicates). Data are presented as mean ± SD. Bar graphs in (B), CYP11A1 in
+(C) and data in (D) were analyzed by one-way ANOVA with Bonferroni’s multiple comparisons test. Data for CYP17A1 in (C) were analyzed by using Kruskal-Wallis test with Dunn’s multiple comparisons test. Data in (H) to (K) and (M) to (0)
+were analyzed with two-tailed unpaired Student’s t-test. Bar graph in (L) was analyzed with Mann-Whitney test. *P < 0.05, **P < 0.01, ***P < 0.001.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025
+
+Fig. 6. LONP1 is the direct target of artemisinins. (A) Chemical structure of biotin-labeled artesunate (bio-ATS). (B) Purified LONP1 was preincubated with dimethyl sulfoxide (DMSO), 20 mM free ATS, ATM, or SM934, followed by incubation with 2 mM bio-ATS. Bio-ATS was then captured to detect interaction between
+LONP1 and artemisinins. (C) Thermal stability of LONP1 was evaluated following pretreatment with 5 mM artemisinins for 30 min. (D) Docking model of the LONP1 and ATS. (E to G) SPR assay showing the interaction between purified LONP1 protease domain and ATM (E), SM934 (F), or ATS (G) respectively. The KD value was calculated from three dependent experiments. (H) Full-length LONP1 or its proteolytic domain was transfected into HEK293T cells stably expressing
+CYP11A1-Flag. After treatment with SM934 (5 mM) for 24 hours, co-IP was conducted with Flag tag, followed by detection of the interacting LONP1 by Western blot with a Myc antibody. (I) WT LONP1 or mutant LONP1 (with GATPKD deletion) was expressed in HEK293T cells stably expressing CYP11A1-Flag. After treatment with
+SM934 (5 mM) for 24 hours, co-IP was conducted with Flag tag, followed by detection of the interacting LONP1 by Western blot with a Myc antibody. (J) LONP1 knockout cells were reconstituted with WT LONP1 or mutant LONP1 (GATPKD deletion). The designated cells were treated with artemisinins (5 mM) for 24 hours and subjected to detection and relative quantification of CYP11A1 expression. The experiments in (B)
+and (E) to (J) were repeated at least two to three times.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025 steroid elevation exhibited an immunosupmalaria (46). Considering our observation that artemisinins inhibit pregnenolone production,
+it would be worthwhile to test whether artemalaria patients, thereby repressing the infection. The antimalaria function of artemisinins is facing substantial challenges. The resistance documented for approximately 20 years (47, 48).
+The global concern about artemisinin resistextended period. Although not the initiating factor for artemisinin resistance, the broader conditions, such as potential future use in
+PCOS treatment, may possibly accelerate the development of resistance. Nevertheless, because the mechanisms of artemisinins for treating PCOS and malaria might be different, it of artemisinins for PCOS treatment while miniartemisinin derivatives. Besides, emerging thereshaping the landscape of malaria treatment,
+in the future.
+Establishing an animal model that accurately mirrors PCOS in women is imperative.
+Several rodent models for PCOS have been reported, encompassing androgen-induced models (utilizing testosterone, DHT, and DHEA),
+estrogen-induced models, aromatase inhibitor–
+induced models, transgenic rodent models,
+and diet-induced models (49). Although the most reliable, none of these models fully replicates the complex conditions of PCOS in women (49). In this study, we used a peripubertal
+DHEA model, displaying elevated serum testosterone levels, irregular estrous cycles, and polycystic ovarian morphology. However, this including hyperprolactinemia, such that it did not fully mirror PCOS features in women—a limitation in the current study. Nonetheless, we also used an hCG- and insulin-induced model of artemisinins on PCOS development.
+LONP1 is a highly conserved multifuncquality control through preferentially degrading damaged, oxidized, or misfolded proteins,
+folding in mitochondria (34, 50–53). Here, we uncovered a function of LONP1 in controlling androgen synthesis by targeting CYP11A1 in response to artemisinins. CYP11A1 was involved steroidogenesis, whereas CYP17A1, HSD3B2,
+and StAR might not be. LONP1 and CYP11A1 shared similar tissue distribution patterns,
+being abundantly expressed in theca-interstitial mitochondria (54). However, under normal conditions, CYP11A1 remained relatively stable because of its minimal affinity for LONP1. By contrast, the presence of artemisinins enhanced LONP1-CYP11A1 interaction, leading to the degradation of CYP11A1 by LONP1. A locate into mitochondria (55), making it possible to mediate the LONP1-CYP11A1 interaction. The androgen-lowering effect indicates
+LONP1 as a promising target for hyperandrogenism intervention. LONP1 expression was decreased in the theca cells of PCOS as compared with levels in control, which could be a cause of the increased levels of CYP11A1 and androgens observed in PCOS. However, the inducer for the down-regulation of LONP1 in
+PCOS remains unclear. LONP1 has been reported to decrease with age, oxidative stress,
+and disuse muscle atrophy (56, 57). Additionally, its activity is largely attenuated during mitochondrial dysfunction (58). Thus, we speculate whether PCOS-related oxidative stress potentially lead to the down-regulation of
+LONP1 expression or its activity. Additionally,
+of LONP1 in oocyte development and survival.
+Conditional disruption of LONP1 in mouse
+(59). Taken together with our current study,
+LONP1 in both ovarian steroidogenesis and follicular development, indicating its potential application in the treatment of infertility.
+serve as molecular-glue degraders that direct
+LONP1 to degrade CYP11A1. Classic molecularglue degraders are drug-like compounds that induce or stabilize interactions between an E3 ubiquitin ligase and a target, resulting in the the recruited protein (28, 60). This emerging conventional pharmacological methods. Here,
+we demonstrated that, in addition to ubiquitin ligase, molecular glues can also directly hijack proteases such as LONP1 to facilitate target protein degradation by forming LONP1substrateinteractions.Thisdegradationprogram ubiquitylation process. As LONP1 is located in mitochondria, we proposed a promising in the mitochondria based on molecular glues.
+oral dihydroartemisinin at a dosage of 40 mg three times daily for a duration of 12 weeks. Serum testosterone (A), AMH (B), antral follicle counts (C), and menstrual cycles (D) were assessed before and after dihydroartemisinin treatment. Bar graphs in (A) to (C) were analyzed by paired t-test. **P < 0.01, ***P < 0.001.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025 artemisinins that specifically enhance the interaction between LONP1 and CYP11A1. The off-target effects of artemisinins on other targets of LONP1. Furthermore, we discovered a proteolytic domain of LONP1 and defined resifor LONP1’s response to artemisinins. Indeed,
+interaction between CYP11A1 and the proteolytic domain of LONP1 was augmented by artemisinins. However, the exact mechanism by which artemisinins reinforce the LONP1-CYP11A1 interaction remains unknown. We speculate that binding with artemisinins may induce conformational changes in LONP1 or modify LONP1 protein surface, allowing for enhanced interaction with CYP11A1. To test this hypothesis, a more detailed binding model of artemisininLONP1-CYP11A1 trimer will be needed.
+Overall, we propose a model in which artemisinin derivatives protect against PCOS deproduction. Artemisinins directly target LONP1 and induce LONP1-CYP11A1 interaction, thereby promoting CYP11A1 degradation and subsequently inhibiting ovarian androgen synthesis.
+Consequently, artemisinins show efficacy in and human patients. Conversely, the proandrogen inducer hCG inhibits the LONP1CYP11A1 association; additionally, LONP1 is down-regulated in PCOS, leading to upregulation of CYP11A1, which in turn promotes androgen production and exacerbates PCOS.
+Our findings not only demonstrate the therbut also highlight their potential as molecularglue degraders. This discovery opens up aveby targeting the LONP1-CYP11A1 interaction.
+All the C57BL/6J mice (Cat no. N000013) were purchased from Gempharmatech Co., Ltd.
+(Nanjing, China) and Sprague-Dawley (SD)
+Animal Co., Ltd. The mice or rats involved in this study were randomly divided into experimental groups. To establish the PCOS-like model using DHEA, 4-week-old female mice or
+DHEA (60 mg/kg body weight) for indicated consecutive days. To establish the PCOS-like model using hCG and insulin, 4-week-old fealong with twice-daily injections of 0.21 IU of hCG. The dosage of insulin was gradually increased from 0.07 IU on day 1 to 0.84 IU on day 11 and maintained at 0.84 IU for the remaining days. Serum testosterone, estrous cycle, and H&E staining of ovaries were detected to evaluate PCOS-like phenotypes. To on PCOS, mice or rats were simultaneously injected with DHEA and ATM. To evaluate the therapeutic effect of artemisinins, mice or rats were treated with ATM after establishment of PCOS-like model. To generate LONP1 overexpression mice, AAV-LONP1 were admin2 to 3 weeks old. All animals were housed at
+21° ± 1°C with a humidity of 50 ± 5% in a
+12-hour light/dark cycle and were fed ad water throughout the experiments. All the
+Care and Use Committee of the Fudan University Shanghai Medical College (20210506-001)
+guidelines on the care and use of animals.
+Nineteen individuals with PCOS (female, age:
+27.79 ± 3.74 years, weight: 62.1 ± 8.9 kg, BMI:
+23.23 ± 2.30 kg/m2) were recruited from DeMedicine Center, Zhongshan Hospital, Fudan
+University for this study. Patients included in this study fulfilled the following criteria: 1)
+Aged 16 to 35 years (inclusive); 2) BMI between 20 and 30 kg/m2; 3) No plan for pregnancy in the ensuing 6 months; 4) Meeting all the Rotterdam diagnostic criteria: a) Menstrual abnormalities: oligomenorrhea (more than 35 days between menstrual periods and past year) or amenorrhea (more than 90 days between two menstrual bleedings). b) Poly-
+(number of ovarian antral follicles in each ovary ≥12, diameter <10 mm) (61). c) Hyper-
+>1.67 nmol/L measured by Elecsys Testosterone II (Roche Diagnostics). The exclusion criteria were as follows: 1) Previous treatment with steroids within 3 months prior to enrolment. 2) Patients with other diseases that can cause secondary polycystic ovaries, including 21-hydroxylase deficiency, prolactinoma, hypothyroidism, Cushing’s syndrome,
+etc. 3) Pregnancy. 4) Patients with other serious diseases involving heart, liver, kidney, or other major organs. 5) Patients with any type of cancer. All participants took oral dihydroartemisinin (Front Pharmaceutical PLC) at a dosage of 40 mg three times daily for 12 weeks.
+At baseline and after 12 weeks of medication,
+testosterone and AMH were measured, and ovarian antral follicles were evaluated by transvaginal ultrasound. The menstrual cycles were recorded for 24 weeks before the start of treatment. After completing a 12-week course of medication, participants were then followed for an extended 12-week period without medication to record menstruation. The restoration bleedings lasting for 2 to 7 days, with intervals between 21 and 35 days, during the 24-week period after the initiation of dihydroartemisinin treatment. This clinical study was approved by the Ethics Committee of Zhongshan Hospital, Fudan University (B2020-115R2), and was and Good Clinical Practice. This study was registered in ClinicalTrials.gov (NCT05465135).
+Informed consent was obtained from all participants before enrolment.
+To isolate theca-interstitial cells, ovaries dissected from female C57BL/6J mice (Gempharmatech Co., Ltd) or rats (Shanghai SLAC
+Laboratory Animal Co., Ltd) aged 4 weeks in Lebovitz’s L-15 medium (Gibco, Cat no.
+11415-064) with 10% FBS (Gibco, Cat no. 10091148), 100 units/ml penicillin, and 0.1 mg/ml streptomycin. Following the removal of granulosa cells, theca-interstitial cells were isolated through collagenase (4 mg/kg, Sigma,
+Cat no. C4-22) digestion and cultured in
+McCoy’s 5A medium (Gibco, Cat no. 16600082) with 10% FBS, 100 units/ml penicillin,
+0.1 mg/ml streptomycin (Biological Industries, Cat no. 03-031-1B).
+BeWo cells (Cat no. CL-0500) were purchased from Procell Life Science & Technology
+Co., Ltd and cultured in Ham’s F-12K medium
+(Gibco, Cat no. 21127022) containing 15% FBS.
+HEK293T and 293A cells were purchased
+(CCTCC) and cultured in Dulbecco’s modified
+Eagle medium (DMEM; Gibco, Cat no. 11995)
+containing 10% FBS. Hanbio was commissioned to establish a stable expression of CYP11A13×Flag in HEK293T cells. The coding sequence of Cyp11a1 was inserted into pHBLV-CMVMCS-3×Flag-EF1-ZsGreen-T2A-PURO vectors.
+CYP11A1-3×Flag construct was produced in
+HEK293T cells. Subsequently, the supernatant collected, filtered, and then introduced into a separate culture dish of HEK293T cells. CYP11A13×Flag expressed cells were then subjected to selection with puromycin. To generate stable
+HEK293T cell lines with a knockout of Lonp1 genes, sgRNA sequence (5′-GCTGAGCGCCAGGCACCCGG-3′) targeting Lonp1 was designed and integrated into a CRISPR/Cas9 lentivirus vector (Hanbio Biotechnology, Shanghai, China).
+Recombinant CRISPR/Cas9 lentivirus harboring Lonp1 sgRNA was generated in HEK293T cells. Then HEK293T cells were infected with puromycin-based selection. LONP1-deficient monoclonal cells were then isolated using limknockout validation.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025 cell type in vaginal smears. For 8 consecutive days, vaginal cells were collected from the specified mice or rats by saline lavage, with daily samples obtained. The samples were subjected microscopy. Briefly, the proestrus stage was typified by predominantly nucleated cells, the estrus stage exhibited cornified squamous epithelial cells, the metestrus stage was marked by a combination of cornified cells and leukocytes, and the diestrus stage showed a predominance of leukocytes. In the fertility test,
+females ceased receiving injections of hCG,
+insulin, or ATM and then mated with proven stud males. The successful mating was deterfollowing day. A subset of female rats was huwere examined to confirm pregnancy 10 days after successful mating. The remaining female of pups. The count of pups in the first litter was quantified.
+Insulin tolerance test (ITT) and glucose tolerance test (GTT)
+In ITT, mice were injected intraperitoneally withrecombinanthumaninsulin(NovoNordisk)
+(0.75 IU/kg body weight) after fasting for 4 hours
+(from 10 a.m. to 2 p.m.). Blood glucose obtained from tail bleeds was monitored at 0, 30, 60, 90,
+and 120 min after insulin administration using a glucometer monitor (Roche). For the GTT, mice were injected intraperitoneally with D-glucose
+(2 mg/g body weight) after fasting for 16 hours
+(from 5 p.m. to 9 a.m.), and blood glucose obtained from tail bleeds was monitored at 0, 30,
+60, 90, and 120 min after administration using a glucometer monitor.
+The coding sequences of mouse Lonp1, including WT, the catalytically inactive variant (S844A),
+and the GATPKD-deleted form, as well as the
+Clpp and Clpx coding sequence, were amplified and cloned into pcdna3.1-C-Myc vectors.
+For the truncated Lonp1 constructs, Lonp1
+N-domain, ATPase domain, and proteolytic and cloned into pcdna3.1-C-Myc vectors. Mouse
+Cyp11a1 coding sequence, W56 to S66 or F252 to T259 deletion form of Cyp11a1 was amplified and cloned into pcdna3.1-C-Flag vectors.
+Artemether (Cat no. JOT-10170) and artesunate (Cat no. JOT-11124) were purchased from
+Chengdu Pufei De Biotech Co., Ltd. DHEA was purchased from Klamar (Cat no. 16035) and
+MCE. Pregnenolone (Cat no. S1914), DHT (Cat no. S4757), bortezomib (Cat no. S1013), CDDOMe (Cat no. S8078), MG132 (Cat no. S2619),
+and CHX (Cat no. S7418) were from Selleck.
+DMSO was from Sigma (Cat no. D2650). Human insulin was from Novo Nordisk (Novolin).
+Elesclomol (STA-4783) was purchased from
+APExBIO (Cat no. A4386).
+Dxi800 immunology analyzer. LH and FSH levels were detected using enzyme immunoassay. To detect hormone secretion in thecainterstitial cells, the cell culture supernatant was collected after a 48-hour treatment with artemisinins. After centrifugation, progesterone, 17a-OHP, and total testosterone levels in the supernatant were measured by chemiluminescence immunoassay. Pregnenolone was measured by enzyme immunoassay (IBL International). Hormone levels in cell culture content. During these measurements, investigators remained blinded to the group allocation.
+LC-MS/MS–based proteomics analysis was conProtein Technology Co. Ltd. Isolated thecainterstitial cells were harvested after 5 mM ATM treatment for 48 hours. SDT (4% SDS, 100 mM
+Tris-HCl, 1 mM DTT, pH 7.6) buffer was used for sample lysis and protein extraction. Protein digestion by trypsin was performed according to filter-aided sample preparation
+(FASP) procedure described by Matthias Mann
+(62). The digest peptides of each sample were desalted on C18 Cartridges [Empore SPE Cartridges C18 (standard density), bed I.D. 7 mm,
+volume 3 ml, Sigma], concentrated by vacuum centrifugation, and reconstituted in 40 ml of
+0.1% (v/v) formic acid. Then 100 mg peptide reagent according to the manufacturer’s instructions (Thermo Scientific). Labeled peptides were fractionated by High pH Reversed-Phase
+Peptide Fractionation Kit (Thermo Scientific).
+and acidified with 0.1% TFA solution and loaded onto the equilibrated, high-pH, reversed-phase fractionation spin column. Peptides were bound to the hydrophobic resin under aqueous conwith water by low-speed centrifugation. A step gradient of increasing acetonitrile concentrations in a volatile high-pH elution solution was peptides into 10 different fractions collected by centrifugation. The collected fractions were desalted on C18 Cartridges [Empore SPE Cartridges C18 (standard density), bed I.D. 7 mm,
+volume 3 ml, Sigma] and concentrated by vacuum centrifugation.
+LC-MS/MS analysis was performed on a Q
+Exactive massspectrometer (Thermo Scientific)
+that was coupled to Easy nLC (Proxeon Biosystems, now Thermo Fisher Scientific) for
+60/90 min. The peptides were loaded onto a reverse phase trap column (Thermo Scientific
+Acclaim PepMap100, 100 mm*2 cm, nanoViper
+C18) connected to the C18-reversed phase analytical column (Thermo Scientific Easy Column, 10 cm long, 75 mm inner diameter, 3 mm resin) in buffer A (0.1% formic acid) and
+(84% acetonitrile and 0.1% formic acid) at a flow rate of 300 nl/min controlled by IntelliFlow technology. The mass spectrometer was operated in positive ion mode. MS data were acquired using a data-dependent top 10 method dynamically choosing the most abundant precursor ions from the survey scan (300 to 1800 m/z) for HCD fragmentation. Automatic gain control (AGC) target was set to 3e6,
+and maximum inject time to 10 ms. Dynamic exclusion duration was 40.0 s. Survey scans were acquired at a resolution of 70,000 at m/z
+200 and resolution for HCD spectra was set to 17,500 at m/z 200, and isolation width was
+2 m/z. Normalized collision energy was 30 eV and the underfill ratio, which specifies the to be reached at maximum fill time, was defined as 0.1%. The instrument was run with peptide recognition mode enabled. The MS raw
+MASCOT engine (Matrix Science, London, UK;
+version 2.2) embedded into Proteome Discoverer 1.4 software for identification and quantitation analysis. The proteins with differential expression (P < 0.05, fold change > 1.2, or fold change < 0.83) were listed in table S1.
+The stromal vascular fraction (SVF) of subcutaneous adipose tissues was isolated and subjected to adipogenic differentiation. Following differentiation, the adipocytes were treated with insulin, androstenedione (A4) or ATM for
+48 hours, after which testosterone levels in the cell culture supernatant were measured. The data were normalized to total protein content.
+Co-immunoprecipitation (co-IP) and IP-MS
+The co-IP assay was conducted as previously described (63, 64). Briefly, HEK293T cells that stably expressed CYP11A1-3×Flag or control cells were lysed in co-IP lysis buffer containing
+50 mM Tris-HCl (pH 7.5), 150 mM NaCl, 5%
+glycerol, 0.5% Triton X-100, and protease inhibitors (Roche, Cat no. 4693159001). After centrifugation, the lysates were incubated with anti-Flag beads (Smart-Lifesciences, Cat no.
+SA042001) for 2 hours at 4°C. Subsequently,
+co-IP lysis buffer, and the immunoprecipitates were separated by SDS-PAGE for Western blotting. For endogenous co-IP, cells were
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025 lysed in co-IP lysis buffer and incubated with either IgG or anti-CYP11A1 antibody (Abcam
+Cat no. ab175408) overnight at 4°C, followed by incubating with rProtein A beads (SmartLifesciences, Cat no. SA012005) for 2 hours. The beads were then washed with the co-IP lysis buffer and the immunoprecipitates were separated by SDS-PAGE for Western blotting.
+For IP-MS analysis, HEK293T cells that stably expressed CYP11A1-3×Flag, as well as control cells, were divided into four groups as follows:
+control cells treated with DMSO, CYP11A1-3×Flag cells treated with DMSO, CYP11A1-3×Flag cells treated with 5 mM ATM, and CYP11A1-3×Flag cells treated with 5 mM SM934 for 24 hours.
+Each group of cells were lysed in co-IP lysis buffer and subjected to immunoprecipitation.
+SDS-PAGE, and gels were cut into pieces for in-gel tryptic digestion. The tryptic peptides were then subjected to LC-MS/MS Analysis.
+The resulting MS/MS data were processed using Proteome Discoverer 1.3. Tandem mass spectra were searched against human database. Trypsin/P was specified as cleavage enzyme allowing up to two missing cleavages.
+Mass error was set to 10 ppm for precursor irons and 0.22 Da for fragment irons. Carbamidomethy1 on Cys were specified as fixed modification and oxidation on Met was specified as variable modification. Peptide confidence was set at high, and peptide ion score was set >20. The protein identified by MS in the CYP11A1-3×Flag cells represented potential candidates for interaction. To pinpoint artemisinin-responsive interacting proteins of
+CYP11A1, we focused on proteins that were common between the two groups of CYP11A13×Flag cells treated with ATM and SM934. We
+CYP11A1-3×Flag cells treated with DMSO. By applying this stringent criterion, we effectively narrowed down the candidate list. The potential CYP11A1 interacting proteins in IP-MS assay were then validated using co-IP.
+Tissues and cells were lysed in lysis buffer containing 2% SDS, 50 mM Tris-HCl (pH 6.8), 10%
+glycerol, 0.002% bromophenol blue, PMSF, and a protease inhibitor mixture (Roche), and then assaykit(YeasenBiotechnology,Catno.20201-A).
+SDS-PAGE and transferred to a polyvinylidene difluoride membrane (Millipore Corp., Bedford,
+MA). The membranes were blocked with 5%
+skimmed milk (w/v) solution in TTBS buffer for 1 hour and incubated with the indicated primary antibodies with gentle rocking overnight at 4°C. Membranes were further incubated with the corresponding HRP-conjugated secondaryantibodies (JacksonImmunoResearch)
+for 1 hour at room temperature. Finally, protein bands were imaged using enhanced chemiluminescence detection kit (ShareBio, Cat no.
+SB-WB012) and analyzed with a luminescent
+ImageQuant LAS 4000 image analyzer (GE
+Healthcare Life Sciences). Quantification of
+Western blot was done using ImageJ, and the the loading control protein. The primary antibodies used in the current study were: CYP11A1
+(Abcam Cat no. ab175408, RRID:AB_2721042),
+CYP17A1 (Abcam Cat no. ab125022, RRID:
+AB_10975095), and HSD3B2 (Abcam Cat no.
+ab191515) antibodies were from Abcam; LONP1 antibody (Proteintech Cat no. 15440-1-AP,
+RRID:AB_2137152), StAR antibody (Proteintech
+Cat no. 12225-1-AP, RRID:AB_2115832), rabbit polyclonal antibody for Myc tag (Proteintech
+Cat no. 16286-1-AP, RRID:AB_11182162) and
+Flag tag (Proteintech Cat no. 20543-1-AP,
+RRID:AB_11232216) were from Proteintech;
+b-actin antibody (Sigma-Aldrich Cat no. A5441,
+RRID:AB_476744) and mouse monoclonal antibody for Flag tag (Sigma-Aldrich Cat no. F1804,
+RRID:AB_262044) antibodies were from
+Sigma-Aldrich; mouse antibody for Myc tag
+(E022050-02) was from EarthOx. Peroxidase
+AffiniPure Goat Anti-Rabbit IgG (H+L) (Jackson
+ImmunoResearchLabsCatno.111-035-003,RRID:
+AB_2313567) and Peroxidase-AffiniPure Goat AntiMouse IgG (H+L) (Jackson ImmunoResearch
+Labs Cat no. 115-035-062, RRID: AB_2338504)
+were from Jackson ImmunoResearch Labs.
+using TRIzol reagent (Thermo Fisher Scientific, Cat no. 15596018). The RNA was reverse
+Eraser (Cat no. RR047A, Takara Bio, Otsu,
+Japan) according to the manufacturer’s instructions. Quantitative PCR (qPCR) was conducted on a ViiA 7 instrument (Applied Biosystems)
+Mix (Vazyme, Cat no. Q711-02) with 18S rRNA as an endogenous control. Results are presented as means and standard deviations (SD)
+from three independent experiments. Primers used in qPCR were listed as follows: Cyp11a1,
+AGGTCCTTCAATGAGATCCCTT and TCCCTGTAAATGGGGCCATAC; Cyp17a1, GCCCAAGTCAAAGACACCTAAT and GTACCCAGGCGAAGAGAATAGA; Hsd3b2, GGTTTTTGGGGCAGAGGATCA and GGTACTGGGTGTCAAGAATGTCT; 18S rRNA CGGCTACCACATCCAAGGAA and GCTGGAATTACCGCGGCT.
+described (65, 66). Theca-interstitial cells were using Lipofectamine RNAiMAX (Thermo Fisher
+Scientific, Cat no. 13778075) at 50% confluence.
+and sequences were as follows: si-Cyp11a1:
+sense, GCUUCUUUCCCAAUCCAAATT; antisense, UUUGGAUUGGGAAAGAAGCTT. siLonp1-1: sense, GGAAGAGACCAACAUCCUUTT;
+antisense, AAGGAUGUUGGUCUCUUCCTT.
+si-Lonp1-2: sense, GCUGCAUACAAGAUCGUAATT; antisense, UUACGAUCUUGUAUGCAGCTT. Stealth siRNA negative control (siNC)
+as controls.
+adenovirus and AAV for LONP1 the ViraPower Adenoviral Expression System.
+For LONP1 overexpression, LONP1 coding sequence was inserted into pAd/CMV/V5-DEST vectors (Thermo Fisher Scientific, Cat no.
+V49320). The vector was digested with PacI to expose the viral inverted terminal repeats, and was transfected into 293A cells to produce a crude adenoviral stock. Then the recombinant adenovirus was amplified in 293A cells with the adenoviral stock and purified using adenovirus purification kits (Sartorius, Cat no. VSAVPQ022). The purified LONP1 adenovirus was used to treat ovarian theca-interstitial cells,
+with LacZ adenovirus as control. AAV-LONP1 and control AAV (Serotype 9) was purchased from
+Genechem. To establish LONP1 overexpression in mice, AAV-LONP1 was administered to mice by intraperitoneal injection at 2-3 weeks old.
+Purification of CYP11A1 and LONP1
+Vectors carrying the coding sequences of Cyp11a1 or Lonp1, fused with Protein A and SUMO tags, were transfected into Expi293F cells using PEI. After being cultured at 37°C for approximately 72 hours post-transfection,
+lysed in a lysis buffer containing 20 mM HEPES pH 8.0, 150 mM NaCl, 10% glycerol, 0.2%
+CHAPS, 2 mM DTT, and protease inhibitors.
+After centrifugation, the supernatant was incubated with IgG resins (Cat no. SA082005,
+Smart-Lifesciences) overnight at 4°C to enrich the tagged recombinant proteins. The resins were washed with buffer containing 20 mM
+HEPES pH 8.0, 150 mM NaCl, 0.1% CHAPS,
+10% glycerol, and 2 mM DTT. After on-column cleavage using Ulp1 for 4 hours, the immobiconcentrated for further biochemical analysis.
+Purified recombinant LONP1 (400 ng) and
+CYP11A1 (400 ng) proteins were incubated in a reaction buffer (50 mM Tris-HCl [pH 8.2],
+5 mM ATP, and 5 mM MgCl2) with or without
+5 mM ATM or SM934 in a total volume of 20 ml.
+After incubation at 37°C for specified durations,
+thereactionswerehaltedbytheaddition of loading buffer for subsequent SDS-PAGE analysis.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025
+
+The degradation of CYP11A1 was analyzed by immunoblotting using CYP11A1 antibodies.
+Bio-ATS capture assay
+ATS was labeled with biotin, and the product bio-ATS underwent purification through sequential washing, extraction, and column chromatography, and was then validated by H-NMR.
+Purified LONP1 or CYP11A1 proteins were preincubated with 20 mM free ATS, ATM or
+SM934 for 1 hour at 4°C in the binding buffer
+(20 mM Tris-HCl [pH 7.5], 100 mM KCl, 0.2%
+Triton X-100, and protease inhibitors). Subsequently, the proteins were incubated with
+2 mM biotin-labeled ATS for 1 hour at 4°C.
+The bio-ATS was then captured using high capacity streptavidin-coated agarose (Thermo
+Fisher Scientific, Cat no. 20359) for 1 hour at
+4°C, followed by three washes with the binding buffer. The agarose was then boiled in
+SDS-PAGE loading buffer and subjected to
+Western blot assay using LONP1 or CYP11A1 antibodies. To assess the competitive binding
+LONP1, LONP1 proteins were pre-incubated with 20 mM bortezomib for 1 hour at 4°C, and followed by the capture assay.
+Surface plasmon resonance (SPR) assay
+Biacore 8K instrument (GE Healthcare). The recombinant mouse LONP1 proteolytic domain was immobilized onto the CM5 sensor surface following the standard amine-coupling procedure according to the manufacturer’s instructions. HBS-N buffer (10 mM HEPES pH 7.4 and 150 mM NaCl) supplemented with 0.05%
+Tween-20 was used as the running buffer for immobilization. The binding affinity assay was performed at 25°C in the buffer containing
+25 mM HEPES, pH 7.4, 150 mM NaCl, 0.1%
+Tween 20, and 2% DMSO. The analyte was measured using a two-fold serial dilution ranging in concentrations from 25 to 0.39 mM and injected for 120 s at a flow rate of 30 mL/min,
+followed by 150 s dissociation time. Solvent
+DMSO concentration between samples; four solvent samples ranging from 1.5 to 3% DMSO analysis. SPR data for each analyte concentration were collected and fitted to a 1:1 binding kinetics model to calculate the on-rate (ka), the off-rate (kd), and the equilibrium dissociation constant (KD = kd/ka) using Biacore Evaluation Software (GE Healthcare). Each experiment was performed three times.
+HEK293T cells were transfected with pcdna3.1LONP1-Myc or pcdna3.1-CYP11A1-Flag plasmids. After 36 hours of transfection, the cells were collected, suspended in PBS and flashfrozen with liquid nitrogen. The cells underthawing. The resulting cell lysates were incubated with artemisinins for 30 min on ice,
+then heated at various temperature for 10 min.
+Next, the lysates were boiled for 10 min in analysis using Myc or Flag antibodies.
+Molecular docking of artemisinins with LONP1
+The structural model of LONP1 was obtained from the Protein Data Bank (LONP1, PDB:
+6WZV). The docking simulation was processed by Schrödinger Glide v8.1 software (Schrödinger,
+LLC, New York, NY, USA) without constraint,
+where the default settings were used, and the result was visualized through PyMOL v2.5.2.
+4% paraformaldehyde at room temperature overnight. Then formaldehyde-fixed tissues were embedded in paraffin, sectioned, and subjected to staining using the H&E staining method or with the CYP11A1 antibody (Abcam
+Cat no. ab175408) following the standard procedures. Histochemistry and immunohistobiotechnology Co., Ltd. The resulting stained samples were observed with a high-quality microscope (BX53F, Olympus). During these measurements, investigators remained blinded to the group allocation.
+Prism software. Results are presented as mean ±
+SD. The two-tailed unpaired Student’s t test was used to compared two groups with normally distributed data. The two-tailed unpaired
+Student’s t test with Welch’s correction was used for two groups with unequal variances.
+The Mann-Whitney test was used to deternormal distribution. To compare more than two groups, the one-way ANOVA with Bonferroni test was used to analyze normally distributed data; nonparametric statistical analysis performed using the Kruskal-Wallis test with
+Dunn’s test for multiple comparisons. A twoway ANOVA with Bonferroni post hoc multibetween multiple groups with two fixed factors, with P < 0.05 considered as statistically significant. Statistical analysis used in each panel was described in the figure legends.
+J. A. Boyle, H. J. Teede, PCOS: Refining diagnostic features inPCOS to optimize health outcomes. Nat. Rev. Endocrinol. 12, 630–631
+(2016). doi: 10.1038/nrendo.2016.157; pmid: 27636732
+A. E. Joham et al., Polycystic ovary syndrome. Lancet Diabetes
+Endocrinol. 10, 668–680 (2022). doi: 10.1016/S2213-8587(22)
+00163-2; pmid: 35934017
+H. J. Teede et al., Recommendations From the 2023
+International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome. J. Clin.
+Endocrinol. Metab. 108, 2447–2469 (2023). doi: 10.1210/
+clinem/dgad463; pmid: 37580314
+K. Unluhizarci, Z. Karaca, F. Kelestimur, Role of insulin and insulin resistance in androgen excess disorders. World J.
+Diabetes 12, 616–629 (2021). doi: 10.4239/wjd.v12.i5.616;
+pmid: 33995849
+D. A. Dumesic et al., Scientific Statement on the Diagnostic
+Criteria, Epidemiology, Pathophysiology, and Molecular
+Genetics of Polycystic Ovary Syndrome. Endocr. Rev. 36,
+487–525 (2015). doi: 10.1210/er.2015-1018; pmid: 26426951
+C. N. Jayasena, S. Franks, The management of patients with polycystic ovary syndrome. Nat. Rev. Endocrinol. 10, 624–636
+(2014). doi: 10.1038/nrendo.2014.102; pmid: 25022814
+M. O. Goodarzi, D. A. Dumesic, G. Chazenbalk, R. Azziz,
+Polycystic ovary syndrome: Etiology, pathogenesis and diagnosis. Nat. Rev. Endocrinol. 7, 219–231 (2011).
+R. L. Rosenfield, D. A. Ehrmann, The Pathogenesis of
+Polycystic Ovary Syndrome (PCOS): The Hypothesis of
+PCOS as Functional Ovarian Hyperandrogenism Revisited.
+Endocr. Rev. 37, 467–520 (2016). doi: 10.1210/er.2015-1104;
+pmid: 27459230
+P. Kempegowda, E. Melson, K. N. Manolopoulos, W. Arlt,
+M. W. O’Reilly, Implicating androgen excess in propagating metabolic disease in polycystic ovary syndrome. Ther. Adv.
+Endocrinol. Metab. 11, 2042018820934319 (2020).
+susceptibility to polycystic ovary syndrome. Nat. Med. 25,
+1894–1904 (2019). doi: 10.1038/s41591-019-0666-1;
+pmid: 31792459 and physiology of human steroidogenesis and its disorders.
+Endocr. Rev. 32, 81–151 (2011). doi: 10.1210/er.2010-0013;
+pmid: 21051590 mitochondria. Mol. Cell. Endocrinol. 441, 55–61 (2017).
+phenotype of propagated theca cells from polycystic ovaries.
+Mol. Endocrinol. 13, 946–957 (1999). doi: 10.1210/
+mend.13.6.0311; pmid: 10379893 patients with polycystic ovary syndrome. J. Clin. Endocrinol.
+Metab. 86, 5925–5933 (2001). doi: 10.1210/jcem.86.12.8088;
+pmid: 11739466 gene expression in theca cells: Augmented transcriptional regulation and mRNA stability in polycystic ovary syndrome.
+PLOS ONE 7, e48963 (2012). doi: 10.1371/journal.
+pone.0048963; pmid: 23155436
+Human ovarian theca cells in culture. Trends Endocrinol.
+Metab. 17, 65–71 (2006). doi: 10.1016/j.tem.2006.01.003;
+pmid: 16460956
+Consequences, Challenges, and Guiding Treatment. J. Clin.
+Endocrinol. Metab. 106, e1071–e1083 (2021). doi: 10.1210/
+clinem/dgaa839; pmid: 33211867 from Chinese medicine. Nat. Med. 17, 1217–1220 (2011).
+browning of WAT and enhancing BAT function. Cell Res. 26,
+1169–1172 (2016). doi: 10.1038/cr.2016.108; pmid: 27633061 and adrenal contributions to polycystic ovary syndrome.
+Best Pract. Res. Clin. Obstet. Gynaecol. 37, 80–97 (2016).
+arteminisin, exerts immunosuppressive functions in vitro and in vivo. Int. Immunopharmacol. 9, 1509–1517 (2009).
+Syndrome. J. Clin. Endocrinol. Metab. 102, 3327–3339 (2017).
+in women with simple obesity—A site-specific role for
+17beta-hydroxysteroid dehydrogenase type 5. J. Endocrinol.
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025183, 331–342 (2004). doi: 10.1677/joe.1.05762;
+pmid: 15531721 hormone biosynthesis. Annu. Rev. Physiol. 63, 193–213 (2001).
+agents via modulating the immune system. Pharmacol. Ther.
+216, 107696 (2020). doi: 10.1016/j.pharmthera.2020.107696;
+pmid: 33022301 disease and aging: Including an etiologic classification of
+Lon-related diseases and disorders. Free Radic. Biol. Med. 100,
+188–198 (2016). doi: 10.1016/j.freeradbiomed.2016.06.031;
+pmid: 27387767
+ER-Golgi intermediate compartments. Proc. Natl. Acad. Sci. U.S.A.
+114, E7707–E7716 (2017). doi: 10.1073/pnas.1709120114;
+pmid: 28851831
+(2021). doi: 10.1016/j.cell.2020.12.020; pmid: 33417864 regulatory (StAR) protein by Lon protease: The unexpected effect of proteasome inhibitors. Mol. Endocrinol. 21, 2164–2177
+(2007). doi: 10.1210/me.2005-0458; pmid: 17579211 protease: A novel target in lymphoma death mediated by the synthetic triterpenoid CDDO and its derivatives. Blood 119,
+3321–3329 (2012). doi: 10.1182/blood-2011-02-340075;
+pmid: 22323447
+Maturation of a Subset of Mitochondrial Proteins, and Its Loss
+Elicits an Integrated Stress Response. Mol. Cell. Biol. 38,
+e00412-17 (2018). doi: 10.1128/MCB.00412-17;
+pmid: 30061372 protease is regulated by nucleotide and protein substrate.
+J. Biol. Chem. 279, 13902–13910 (2004). doi: 10.1074/
+jbc.M309642200; pmid: 14739292
+Science 356, eaal3321 (2017). doi: 10.1126/science.aal3321;
+pmid: 28495876 the mitochondrial proteome. Nat. Rev. Mol. Cell Biol. 22,
+54–70 (2021). doi: 10.1038/s41580-020-00300-2;
+pmid: 33093673 cell gene expression: Clues to the association between valproate use and metabolic side effects. Physiol. Genomics 20,
+233–243 (2005). doi: 10.1152/physiolgenomics.00193.2004;
+pmid: 15598877
+D. Mukherjee, Regulation of ovarian steroidogenesis in vitro by gonadotropin in common carp Cyprinus carpio: Interaction between calcium- and adenylate cyclase-dependent pathways and involvement of ERK signaling cascade. J. Mol. Endocrinol.
+45, 207–218 (2010). doi: 10.1677/JME-10-0061;
+pmid: 20668068
+Inhibitors for Probing In Vitro Biology. J. Med. Chem. 64,
+4857–4869 (2021). doi: 10.1021/acs.jmedchem.0c02152;
+pmid: 33821636 metabolism in artemisinin susceptibility. Nat. Commun. 11, 4813
+(2020). doi: 10.1038/s41467-020-18624-0; pmid: 32968076 artemisinin in Plasmodium falciparum. Nat. Commun. 6, 10111
+(2015). doi: 10.1038/ncomms10111; pmid: 26694030
+Plasmodium falciparum. Nature 424, 957–961 (2003).
+resistance in Plasmodium falciparum malaria. Nature
+520, 683–687 (2015). doi: 10.1038/nature14412;
+pmid: 25874676
+Impair a Cell Identity. Cell 168, 86–100.e15 (2017).
+ameliorates polycystic ovary syndrome. Proc. Natl. Acad. Sci.
+U.S.A. 113, 2708–2713 (2016). doi: 10.1073/pnas.1523236113;
+pmid: 26903641 orchestrates polycystic ovary syndrome. Nat. Med. 25,
+1225–1233 (2019). doi: 10.1038/s41591-019-0509-0;
+pmid: 31332392 polycystic ovary syndrome. Nat. Rev. Endocrinol. 17, 77–78
+(2021). doi: 10.1038/s41574-020-00456-z; pmid: 33318648 adaptive immunity in human malaria. Nat. Metab. 3, 1001–1016
+(2021). doi: 10.1038/s42255-021-00404-9; pmid: 34113019 isolates to in-vitro artemether and point mutations of the
+SERCA-type PfATPase6. Lancet 366, 1960–1963 (2005).
+western Cambodia. N. Engl. J. Med. 359, 2619–2620 (2008).
+syndrome. Life Sci. 280, 119753 (2021). doi: 10.1016/
+j.lfs.2021.119753; pmid: 34171379 oxidized mitochondrial aconitase by an ATP-stimulated mechanism. Nat. Cell Biol. 4, 674–680 (2002). doi: 10.1038/
+ncb836; pmid: 12198491 impairs DNA binding and promotes degradation by the AAA+
+Lon protease. Mol. Cell 49, 121–132 (2013). doi: 10.1016/
+j.molcel.2012.10.023; pmid: 23201127 promote mitochondrial protein folding. Nat. Commun. 12,
+265 (2021). doi: 10.1038/s41467-020-20597-z;
+pmid: 33431889 mitochondrial proteases in health, ageing and disease.
+Nat. Rev. Mol. Cell Biol. 16, 345–359 (2015). doi: 10.1038/
+nrm3984; pmid: 25970558 the mitochondrial proteases involved in its own degradation.
+Mol. Endocrinol. 28, 208–224 (2014). doi: 10.1210/me.20131275; pmid: 24422629 mitochondrial c-type cytochromes in yeast and human cells.
+Biochim. Biophys. Acta Mol. Cell Res. 1867, 118661 (2020).
+and oxidative stress. FEBS Lett. 532, 103–106 (2002).
+reduced skeletal muscle mass and strength. Nat. Commun. 13,
+894 (2022). doi: 10.1038/s41467-022-28557-5;
+pmid: 35173176 mitochondria. Nat. Cell Biol. 24, 181–193 (2022). doi: 10.1038/
+s41556-021-00840-5; pmid: 35165413 translocation of AIFM1 in mammals. EBioMedicine 75, 103790
+(2022). doi: 10.1016/j.ebiom.2021.103790; pmid: 34974310 variation for the design of molecular glue degraders.
+Cell Chem. Biol. 28, 1032–1047 (2021). doi: 10.1016/
+j.chembiol.2021.04.009; pmid: 33930325 workshop group, Revised 2003 consensus on diagnostic criteria and long-term health risks related to polycystic ovary syndrome (PCOS). Hum. Reprod. 19, 41–47 (2004).
+Universal sample preparation method for proteome analysis.
+Nat. Methods 6, 359–362 (2009). doi: 10.1038/nmeth.1322;
+pmid: 19377485
+Specific Protease 2 Controls Systemic Metabolism Through
+SUMOylation-Dependent Regulation of Liver-Adipose Tissue
+Crosstalk. Hepatology 74, 1864–1883 (2021). doi: 10.1002/
+hep.31881; pmid: 33934381 sensor AMPKa. J. Biol. Chem. 298, 101544 (2022).
+Adipocytes by Regulating Lipolysis. Diabetes 71, 1862–1879
+(2022). doi: 10.2337/db21-0999; pmid: 35709007 biogenesis in brown adipocytes. Proc. Natl. Acad. Sci. U.S.A.
+120, e2305717120 (2023). doi: 10.1073/pnas.2305717120;
+pmid: 37549287
+We are grateful to J.-P. Zuo from the Shanghai Institute of Materia
+Medica for providing the SM934 agent and to Y.-F. Ke at Fudan
+University for assisting in animal model experiments. Funding:
+This research was supported by National Key R&D Program of
+China grant 2018YFA0800400 (Q.-Q.T.), National Natural Science
+Foundation of China grants 82170884, 81970744, and 81601251
+(Y.L.), National Natural Science Foundation of China grant 81730021
+(Q.-Q.T.), Shanghai Rising-Star Program grant 22QA1402100 (Y.L.),
+and National Key R&D Program of China grant 2021YFC2700400
+(X.-Y.L.), and by scientific research projects of the Shanghai Health
+Commission grant 20204Y0116 (Y.L.). Author contributions:
+Conceptualization: Q.-Q.T. and Y.L. Investigation: Y.L., J.-J.J., S.-Y.D.,
+L.-S.M., J.-J.F., J.-C.H., Y.Y., M.D., W.-Y.Z., Q.-H.Y., Y.-F.X., H.-Y.X.,
+Y.-J.S., S.-W.Q., Y.T., and W.L. Funding acquisition: Y.L., Q.-Q.T., and
+X.-Y.L. Project administration: Q.-Q.T., Y.L., X.D., X.-Y.L., Y.-J.D., and
+C.-J.X. Supervision: Q.-Q.T. and Y.L. Writing – original draft: Y.L.
+Writing – review and editing: Y.L. and Q.-Q.T. Competing interests: Q.-Q.T., Y.L., C.-J.X., and S.-Y.D. are inventors on a patent application (202110938195.4) titled “The application of diseases related to hyperandrogenemia.” The other authors declare that they have no competing interests. Data and materials availability: All data are available in the main text or the supplementary materials. License information: Copyright © 2024 the authors, some rights reserved; exclusive licensee American
+Association for the Advancement of Science. No claim to original
+US government works. https://www.science.org/about/sciencelicenses-journal-article-reuse science.org/doi/10.1126/science.adk5382
+Figs. S1 to S14
+Submitted 29 August 2023; accepted 19 April 202410.1126/science.adk5382
+Liu et al., Science 384, eadk5382 (2024)
+14 June 2024
+Downloaded from https://www.science.org at Zhejiang University on May 19, 2025
