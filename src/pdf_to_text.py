@@ -6,20 +6,20 @@ from pathlib import Path
 from typing import Dict
 
 def extract_text_from_pdf(pdf_path: str) -> str:
-    """从PDF提取文本并清理"""
+    """extract text from pdf and remove unwanted element"""
     try:
         doc = fitz.open(pdf_path)
         text = ""
         for page in doc:
             page_text = page.get_text("text")
-            # 清理页码和页眉页脚
+            # Clean page numbers and headers/footers
             lines = []
             for line in page_text.split("\n"):
                 line = line.strip()
-                # 过滤页码和短行
+                # Filter out page numbers and short lines
                 if (not re.match(r"^\s*\d+\s*$", line) and 
-                    len(line) > 10 and  # 过滤太短的行
-                    not line.isupper()):  # 过滤全大写的行（可能是页眉）
+                    len(line) > 10 and  # Filter out lines that are too short
+                    not line.isupper()):  # Filter out all-uppercase lines (likely headers)
                     lines.append(line)
             text += " ".join(lines) + "\n\n"
         return text
@@ -28,25 +28,24 @@ def extract_text_from_pdf(pdf_path: str) -> str:
         return ""
 
 def segment_imrad(text: str) -> Dict[str, str]:
-    """IMRaD分段"""
+    """IMRaD segment"""
     from .utils import SECTION_PATTERNS
     
     indices = []
     for name, pattern in SECTION_PATTERNS.items():
         matches = list(re.finditer(pattern, text, re.IGNORECASE | re.MULTILINE))
         if matches:
-            # 取第一个匹配的位置
+            # Take the position of the first match
             indices.append((matches[0].start(), name))
     
     if not indices:
         return {"body": text}
 
-    # 按位置排序
     indices.sort()
     sections = {}
     
     for i, (start, name) in enumerate(indices):
-        # 结束位置是下一个section的开始，或者是文本结尾
+        # The end position is either the start of the next section or the end of the text
         end = indices[i + 1][0] if i + 1 < len(indices) else len(text)
         sections[name] = text[start:end].strip()
     
@@ -60,7 +59,7 @@ if __name__ == "__main__":
     pdf_path = sys.argv[1]
     text = extract_text_from_pdf(pdf_path)
     
-    # 保存原始文本
+    # save the original txt
     base_name = Path(pdf_path).stem
     output_dir = Path("outputs")
     output_dir.mkdir(exist_ok=True)

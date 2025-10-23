@@ -1,33 +1,19 @@
-# IMRaD 知识图谱提取系统
+# IMRaD knowledge graph extraction system
 
-从科研论文PDF中自动提取IMRaD结构（假设、实验、数据集、分析、结论）并构建交互式知识图谱。
-
-## 🚀 快速开始
-
-### 环境设置
+### environment setup
 
 ```bash
-# 1. 创建虚拟环境
+# 1. create environment
 python -m venv venv
 venv\Scripts\activate  # Windows
 # source venv/bin/activate  # Linux/Mac
 
-# 2. 安装依赖
+# 2. install requirement
 pip install -r requirements.txt
 
-# 3. 设置环境（自动安装缺失依赖）
-python setup_environment.py
+# 3. run the command
+python run_semantic_pipeline.py data/artemisinin_pcos.pdf
+python compare_methods.py outputs/artemisinin_pcos_nodes.csv outputs/artemisinin_pcos_semantic_semantic_nodes.csv
+
 ```
 
-project/
-├── data/           # 输入PDF文件
-├── src/            # 源代码
-│   ├── pdf_to_text.py     # PDF文本提取
-│   ├── extract_imrad.py   # IMRaD结构解析
-│   ├── build_graph.py     # 图谱构建
-│   ├── visualize_graph.py # 可视化
-│   └── utils.py           # 工具函数
-├── outputs/        # 输出文件
-├── notebooks/      # Jupyter笔记本
-├── tests/          # 测试文件
-└── docs/           # 文档

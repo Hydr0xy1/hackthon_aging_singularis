@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-语义感知的IMRaD知识图谱提取系统
-解决同一单词在不同语境中的语义歧义问题
+Semantic-Aware IMRaD Knowledge Graph Extraction System
+Resolves semantic ambiguity of words across different contexts.
 """
 
 import sys
@@ -13,31 +13,31 @@ from pathlib import Path
 from typing import List, Dict, Any
 from collections import defaultdict, Counter
 
-# 导入语义提取器
+# Import semantic extractor
 try:
     from src.semantic_extractor import SemanticIMRaDExtractor
     SEMANTIC_AVAILABLE = True
 except ImportError as e:
-    print(f"⚠️  语义提取器导入失败: {e}")
+    print(f"⚠️   Failed to import semantic extractor: {e}")
     SEMANTIC_AVAILABLE = False
 
-# 导入其他必要模块
+# Import other necessary modules
 try:
     import fitz
     import re
     import uuid
     from collections import Counter, defaultdict
 except ImportError as e:
-    print(f"❌ 导入失败: {e}")
+    print(f"❌ Import failed: {e}")
     sys.exit(1)
 
 class SemanticIMRaDPipeline:
-    """语义感知的IMRaD处理管道"""
+    """Semantic-aware IMRaD processing pipeline"""
     
     def __init__(self):
         self.semantic_extractor = SemanticIMRaDExtractor() if SEMANTIC_AVAILABLE else None
         
-        # IMRaD章节模式
+        # IMRaD section patterns
         self.section_patterns = {
             "introduction": r"(?:^|\n)(?:\s*\d*\.*\s*Introduction|Background)",
             "methods": r"(?:^|\n)(?:\s*\d*\.*\s*(Materials and Methods|Methods|Experimental Procedures))",
@@ -46,14 +46,13 @@ class SemanticIMRaDPipeline:
         }
     
     def extract_text_from_pdf(self, pdf_path: str) -> str:
-        """从PDF提取文本"""
-        print(f"📄 从 {os.path.basename(pdf_path)} 提取文本...")
+        """Extract text from a PDF"""
+        print(f"📄 extract text from {os.path.basename(pdf_path)} ...")
         try:
             doc = fitz.open(pdf_path)
             text = ""
             for page_num, page in enumerate(doc):
                 page_text = page.get_text("text")
-                # 清理文本
                 lines = []
                 for line in page_text.split("\n"):
                     line = line.strip()
@@ -66,19 +65,18 @@ class SemanticIMRaDPipeline:
             doc.close()
             return text
         except Exception as e:
-            print(f"❌ PDF提取错误: {e}")
+            print(f"❌ PDF extraction error: {e}")
             return ""
     
     def segment_imrad(self, text: str) -> Dict[str, str]:
-        """IMRaD分段"""
+        """Segment text into IMRaD sections"""
         indices = []
         for name, pattern in self.section_patterns.items():
             matches = list(re.finditer(pattern, text, re.IGNORECASE | re.MULTILINE))
             if matches:
                 indices.append((matches[0].start(), name))
-        
         if not indices:
-            print("⚠️  未检测到标准IMRaD章节，使用全文处理")
+            print("⚠️  No standard IMRaD sections detected, using full text")
             return {"full_text": text}
 
         indices.sort()
@@ -88,7 +86,6 @@ class SemanticIMRaDPipeline:
             end = indices[i + 1][0] if i + 1 < len(indices) else len(text)
             section_content = text[start:end].strip()
             
-            # 移除章节标题行
             lines = section_content.split('\n')
             if len(lines) > 1:
                 section_content = '\n'.join(lines[1:]).strip()
@@ -98,34 +95,33 @@ class SemanticIMRaDPipeline:
         return sections
     
     def extract_nodes_semantic(self, text: str) -> List[Dict[str, Any]]:
-        """使用语义理解提取节点"""
+        """Extract nodes using semantic understandin"""
         if not self.semantic_extractor:
-            print("⚠️  语义提取器不可用，使用传统方法")
+            print("⚠️  Semantic extractor unavailable, using traditional method")
             return self._extract_nodes_traditional(text)
         
-        print("🧠 使用语义理解提取节点...")
+        print("🧠 Extracting nodes with semantic understanding...")
         sections = self.segment_imrad(text)
         nodes = self.semantic_extractor.extract_nodes_with_semantics(text, sections)
         
-        # 统计节点类型
+        # Summarize node type
         if nodes:
             node_types = Counter([node["type"] for node in nodes])
-            print(f"📊 语义节点类型分布: {dict(node_types)}")
+            print(f"📊 Semantic node type distribution: {dict(node_types)}")
             
-            # 显示语义消歧示例
             disambiguation_examples = [n for n in nodes if n.get("semantic_context", {}).get("disambiguation_applied")]
             if disambiguation_examples:
-                print(f"🔍 应用了语义消歧的节点: {len(disambiguation_examples)} 个")
-                for example in disambiguation_examples[:3]:  # 显示前3个示例
+                print(f"🔍 Nodes with semantic disambiguation applied: {len(disambiguation_examples)} ")
+                for example in disambiguation_examples[:3]: 
                     print(f"   - {example['type']}: {example['text'][:60]}...")
         
         return nodes
     
     def _extract_nodes_traditional(self, text: str) -> List[Dict[str, Any]]:
-        """传统正则表达式方法（备用）"""
-        print("📝 使用传统正则表达式方法...")
+        """Fallback method using regex-based extraction"""
+        print("📝 Using traditional regex-based method...")
         
-        # 传统模式
+        # Cue patterns
         cue_patterns = {
             "Hypothesis": [
                 r"\bwe hypothesi[sz]e\b", r"\bwe propose\b", r"\bthis study aims to\b",
@@ -156,7 +152,6 @@ class SemanticIMRaDPipeline:
             if len(section_text.strip()) < 100:
                 continue
             
-            # 简单句子分割
             sentences = re.split(r'(?<=[.!?])\s+', section_text)
             for sentence in sentences:
                 sentence = sentence.strip()
@@ -184,22 +179,21 @@ class SemanticIMRaDPipeline:
         return nodes
     
     def build_semantic_edges(self, nodes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """构建语义边关系"""
+        """Build semantic relationships (edges)"""
         if not self.semantic_extractor:
             return self._build_traditional_edges(nodes)
         
-        print("🔗 构建语义边关系...")
+        print("🔗 Build semantic relationships (edges)...")
         edges = self.semantic_extractor.build_semantic_edges(nodes)
         
-        # 统计边类型
         if edges:
             edge_types = Counter([edge["type"] for edge in edges])
-            print(f"📊 语义边类型分布: {dict(edge_types)}")
+            print(f"📊 Semantic edge type distribution: {dict(edge_types)}")
         
         return edges
     
     def _build_traditional_edges(self, nodes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """传统边构建方法"""
+        """Traditional rule-based edge construction"""
         edges = []
         node_ids_by_type = defaultdict(list)
         
@@ -225,15 +219,15 @@ class SemanticIMRaDPipeline:
                             "confidence": 0.7
                         })
                         count += 1
-                print(f"  🔗 {rel_type}: {count} 条边")
+                print(f"  🔗 {rel_type}: {count} ")
         
         return edges
     
     def export_to_csv(self, nodes: List[Dict[str, Any]], edges: List[Dict[str, Any]], base_name: str):
-        """导出为CSV文件"""
+        """Export nodes and edges as CSV"""
         Path("outputs").mkdir(exist_ok=True)
         
-        # 节点CSV
+        # node CSV
         if nodes:
             nodes_file = f"{base_name}_semantic_nodes.csv"
             with open(nodes_file, 'w', newline='', encoding='utf-8') as f:
@@ -241,14 +235,13 @@ class SemanticIMRaDPipeline:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
                 for node in nodes:
-                    # 处理semantic_context字段
                     row = {field: node.get(field, '') for field in fieldnames}
                     if 'semantic_context' in row and isinstance(row['semantic_context'], dict):
                         row['semantic_context'] = json.dumps(row['semantic_context'])
                     writer.writerow(row)
-            print(f"  💾 语义节点保存: {nodes_file}")
+            print(f"  💾 Saved semantic nodes: {nodes_file}")
         
-        # 边CSV  
+        # edge CSV  
         if edges:
             edges_file = f"{base_name}_semantic_edges.csv"
             with open(edges_file, 'w', newline='', encoding='utf-8') as f:
@@ -257,15 +250,15 @@ class SemanticIMRaDPipeline:
                 writer.writeheader()
                 for edge in edges:
                     writer.writerow(edge)
-            print(f"  💾 语义边保存: {edges_file}")
+            print(f"  💾 Saved semantic edges: {edges_file}")
     
     def create_semantic_visualization(self, nodes: List[Dict[str, Any]], edges: List[Dict[str, Any]], output_file: str):
-        """创建语义感知的可视化"""
+        """Create semantic-aware visualization (HTML)"""
         html_content = """
 <!DOCTYPE html>
 <html>
 <head>
-    <title>语义感知的IMRaD知识图谱</title>
+    <title>Semantic-Aware IMRaD Knowledge Graph</title>
     <meta charset="utf-8">
     <style>
         body { 
@@ -323,38 +316,36 @@ class SemanticIMRaDPipeline:
 </head>
 <body>
     <div class="container">
-        <h1>🧠 语义感知的IMRaD知识图谱</h1>
+        <h1>🧠 Semantic-Aware IMRaD Knowledge Graph</h1>
         
         <div class="stats">
-            <strong>语义提取统计:</strong><br>
-            节点总数: %NODE_COUNT% | 边关系总数: %EDGE_COUNT%<br>
-            语义消歧应用: %DISAMBIGUATION_COUNT% | 处理时间: %TIMESTAMP%
+            <strong>Semantic Extraction Stats:</strong><br>
+            Total Nodes: %NODE_COUNT% | Total Edges: %EDGE_COUNT%<br>
+            Disambiguations Applied: %DISAMBIGUATION_COUNT% | Processed at: %TIMESTAMP%
         </div>
         
-        <h2>🔗 语义边关系</h2>
+        <h2>🔗 Semantic Relationships</h2>
         %EDGES%
         
-        <h2>📝 语义节点</h2>
+        <h2>📝 Semantic Nodes</h2>
         %NODES%
     </div>
 </body>
 </html>
         """
         
-        # 按章节分组节点
+        # Generate HTML content
         nodes_by_section = defaultdict(list)
         for node in nodes:
             nodes_by_section[node['section']].append(node)
         
-        # 生成节点HTML
         nodes_html = ""
         disambiguation_count = 0
         
         for section_name, section_nodes in nodes_by_section.items():
-            nodes_html += f'<div class="section" style="background: #2c3e50; color: white; padding: 10px 15px; margin: 20px 0 10px 0; border-radius: 5px; font-weight: bold;">📁 {section_name.upper()} 章节</div>'
+            nodes_html += f'<div class="section" style="background: #2c3e50; color: white; padding: 10px 15px; margin: 20px 0 10px 0; border-radius: 5px; font-weight: bold;">📁 {section_name.upper()} Section</div>'
             
             for node in section_nodes:
-                # 检查是否应用了语义消歧
                 semantic_context = node.get('semantic_context', {})
                 disambiguation_applied = semantic_context.get('disambiguation_applied', False)
                 if disambiguation_applied:
@@ -365,18 +356,18 @@ class SemanticIMRaDPipeline:
                     <div class="node-type" style="font-weight: bold; font-size: 1.1em;">{node['type']}</div>
                     <div class="node-text" style="margin: 8px 0; line-height: 1.4;">{node['text']}</div>
                     <div class="semantic-info">
-                        <strong>语义角色:</strong> {semantic_context.get('role', 'N/A')}<br>
-                        <strong>关键实体:</strong> {', '.join(semantic_context.get('entities', [])[:5])}<br>
-                        <strong>置信度:</strong> {node.get('confidence', 'N/A')}
+                        <strong>Semantic Role:</strong> {semantic_context.get('role', 'N/A')}<br>
+                        <strong>Key Entities:</strong> {', '.join(semantic_context.get('entities', [])[:5])}<br>
+                        <strong>Confidence:</strong> {node.get('confidence', 'N/A')}
                     </div>
-                    {f'<div class="disambiguation">🔍 已应用语义消歧</div>' if disambiguation_applied else ''}
+                    </div>
+                    {f'<div class="disambiguation">🔍 Semantic disambiguation applied</div>' if disambiguation_applied else ''}
                     <div class="node-meta" style="font-size: 0.9em; opacity: 0.8;">
-                        ID: {node['id']} | 证据: {node.get('evidence', 'N/A')}
+                        ID: {node['id']} | Evidence: {node.get('evidence', 'N/A')}
                     </div>
                 </div>
                 """
         
-        # 生成边HTML
         edges_html = ""
         for edge in edges:
             semantic_evidence = edge.get('semantic_evidence', 'N/A')
@@ -384,12 +375,11 @@ class SemanticIMRaDPipeline:
             <div class="edge" style="margin: 8px 0; padding: 10px; background: #f8f9fa; border-left: 4px solid #34495e; border-radius: 4px;">
                 <strong>{edge['start']}</strong> → 
                 <strong>{edge['end']}</strong> 
-                <small>({edge['type']} | 置信度: {edge.get('confidence', 'N/A')})</small>
-                <br><small>语义证据: {semantic_evidence}</small>
+                <small>({edge['type']} | Confidence: {edge.get('confidence', 'N/A')})</small>
+                <br><small>Semantic Evidence: {semantic_evidence}</small>
             </div>
             """
         
-        # 替换模板中的占位符
         html_content = html_content.replace("%NODE_COUNT%", str(len(nodes))) \
                                   .replace("%EDGE_COUNT%", str(len(edges))) \
                                   .replace("%DISAMBIGUATION_COUNT%", str(disambiguation_count)) \
@@ -400,73 +390,69 @@ class SemanticIMRaDPipeline:
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(html_content)
         
-        print(f"  🌐 语义可视化: {output_file}")
+        print(f"  🌐 Semantic visualization saved: {output_file}")
 
 def main(pdf_path: str):
-    """运行语义感知的完整pipeline"""
-    print(f"🚀 开始语义感知处理: {pdf_path}")
+    """Run the full semantic-aware pipeline"""
+    print(f"🚀 Starting semantic-aware processing: {pdf_path}")
     start_time = time.time()
     
-    # 确保输出目录存在
     Path("outputs").mkdir(exist_ok=True)
     
-    # 创建处理管道
     pipeline = SemanticIMRaDPipeline()
     
     try:
-        # 步骤1: 提取文本
         text = pipeline.extract_text_from_pdf(pdf_path)
         if not text or len(text) < 100:
-            print("❌ 文本提取失败或文本过短")
+            print("❌ Text extraction failed or too short")
             return
         
-        print(f"✅ 成功提取文本 ({len(text)} 字符)")
+        print(f"✅ Successfully extracted text ({len(text)} characters)")
         
-        # 步骤2: 语义节点提取
-        print("\n🧠 正在进行语义节点提取...")
+        print("\n🧠 Extracting semantic nodes...")
         nodes = pipeline.extract_nodes_semantic(text)
         
         if not nodes:
-            print("❌ 未提取到任何节点")
+            print("❌ No nodes extracted")
             return
         
-        print(f"✅ 成功提取 {len(nodes)} 个语义节点")
+        print(f"✅ Extracted {len(nodes)} semantic nodes")
         
-        # 步骤3: 构建语义边
-        print("\n🔗 正在构建语义边关系...")
+
+        print("\n🔗 Building semantic relationships...")
         edges = pipeline.build_semantic_edges(nodes)
-        print(f"✅ 成功构建 {len(edges)} 条语义边")
+        print(f"✅ Built {len(edges)} semantic edges")
         
-        # 步骤4: 保存结果
-        print("\n💾 正在保存语义结果...")
+
+        print("\n💾 Saving semantic results...")
         base_name = f"outputs/{Path(pdf_path).stem}_semantic"
         
         pipeline.export_to_csv(nodes, edges, base_name)
         pipeline.create_semantic_visualization(nodes, edges, f"{base_name}_graph.html")
         
         elapsed_time = time.time() - start_time
-        print(f"\n🎉 语义处理完成! 用时 {elapsed_time:.2f} 秒")
-        print(f"📊 最终结果: {len(nodes)} 个语义节点, {len(edges)} 条语义边")
-        print(f"📁 输出文件:")
+        print(f"\n🎉 Semantic processing completed in {elapsed_time:.2f} seconds")
+        print(f"📊 Final results: {len(nodes)} nodes, {len(edges)} edges")
+        print(f"📁 Output files:")
         print(f"   - {base_name}_semantic_nodes.csv")
         print(f"   - {base_name}_semantic_edges.csv") 
         print(f"   - {base_name}_graph.html")
         
     except Exception as e:
-        print(f"❌ 处理过程中出错: {e}")
+        print(f"❌ Error during processing: {e}")
         import traceback
         traceback.print_exc()
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("❌ 使用方法: python run_semantic_pipeline.py <PDF文件路径>")
-        print("💡 示例:")
+        print("❌ Usage: python run_semantic_pipeline.py <PDF file path>")
+        print("💡 Example:")
         print('   python run_semantic_pipeline.py "data/artemisinin_pcos.pdf"')
         sys.exit(1)
     
     pdf_file = sys.argv[1]
     if not os.path.exists(pdf_file):
-        print(f"❌ 文件不存在: {pdf_file}")
+        print(f"❌ No such file: {pdf_file}")
         sys.exit(1)
     
     main(pdf_file)
