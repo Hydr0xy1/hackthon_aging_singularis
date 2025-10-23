@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-语义感知的IMRaD提取器
-解决同一单词在不同语境中的语义歧义问题
+Semantic-aware IMRaD extractor
+Resolve semantic ambiguity of the same word in different contexts
 """
 
 import re
@@ -18,14 +18,14 @@ try:
     nlp = spacy.load("en_core_web_sm")
     SPACY_AVAILABLE = True
 except (OSError, ImportError):
-    print("⚠️  spaCy英语模型未安装，使用简单NLP处理")
-    print("   运行: python -m spacy download en_core_web_sm")
+    print("⚠️  Can't load spaCy en_core_web_sm model, using simple NLP handling")
+    print("   Run: python -m spacy download en_core_web_sm")
     nlp = None
     SPACY_AVAILABLE = False
 
 @dataclass
 class SemanticContext:
-    """语义上下文信息"""
+    """Semantic context information"""
     sentence: str
     section: str
     surrounding_sentences: List[str]
@@ -34,12 +34,12 @@ class SemanticContext:
     confidence: float
 
 class SemanticIMRaDExtractor:
-    """语义感知的IMRaD提取器"""
+    """Semantic-aware IMRaD extractor"""
     
     def __init__(self):
         self.nlp = nlp if SPACY_AVAILABLE else None
         
-        # 语义模式定义 - 基于语义角色而非简单词汇匹配
+        # Semantic pattern definitions - based on semantic roles instead of simple keyword matching
         self.semantic_patterns = {
             "Hypothesis": {
                 "indicators": [
@@ -98,7 +98,7 @@ class SemanticIMRaDExtractor:
             }
         }
         
-        # 语义消歧规则
+        # Semantic disambiguation rules
         self.disambiguation_rules = {
             "patients": {
                 "medical_context": ["disease", "treatment", "clinical", "therapy", "diagnosis"],
@@ -116,18 +116,18 @@ class SemanticIMRaDExtractor:
         }
     
     def extract_semantic_context(self, sentence: str, section: str, surrounding_sentences: List[str] = None) -> SemanticContext:
-        """提取句子的语义上下文"""
+        """Extract the semantic context of a sentence"""
         if self.nlp:
             doc = self.nlp(sentence)
             entities = [ent.text for ent in doc.ents]
-            # 提取关键实体和语义角色
+            # extract Key Entities and Semantic Role
             key_entities = [token.lemma_ for token in doc if token.pos_ in ['NOUN', 'PROPN'] and not token.is_stop]
         else:
             # 简单fallback
             entities = re.findall(r'\b[A-Z][a-z]+\b', sentence)
             key_entities = re.findall(r'\b\w+\b', sentence.lower())
         
-        # 确定语义角色
+        # 确定Semantic Role
         semantic_role = self._determine_semantic_role(sentence, section)
         
         return SemanticContext(
@@ -140,10 +140,10 @@ class SemanticIMRaDExtractor:
         )
     
     def _determine_semantic_role(self, sentence: str, section: str) -> str:
-        """确定句子的语义角色"""
+        """Determine the semantic role of a sentence"""
         sentence_lower = sentence.lower()
         
-        # 基于章节的语义角色
+        # Semantic Role based on section
         section_roles = {
             "introduction": "background_hypothesis",
             "methods": "methodology_procedure", 
@@ -153,7 +153,7 @@ class SemanticIMRaDExtractor:
         
         base_role = section_roles.get(section, "general")
         
-        # 基于句子结构的语义角色
+        # Semantic Role based on sentence structure
         if any(word in sentence_lower for word in ["we hypothesize", "we propose", "we predict"]):
             return "hypothesis_statement"
         elif any(word in sentence_lower for word in ["we conducted", "we performed", "we used"]):
@@ -166,7 +166,7 @@ class SemanticIMRaDExtractor:
         return base_role
     
     def semantic_disambiguation(self, word: str, context: SemanticContext) -> str:
-        """语义消歧 - 根据上下文确定词汇的真实含义"""
+        """Semantic disambiguation - determine the true meaning of a term based on its context"""
         word_lower = word.lower()
         
         if word_lower not in self.disambiguation_rules:
@@ -175,7 +175,7 @@ class SemanticIMRaDExtractor:
         rules = self.disambiguation_rules[word_lower]
         context_text = " ".join([context.sentence] + context.surrounding_sentences).lower()
         
-        # 计算每个含义的置信度
+        # 计算每个含义的Confidence
         meaning_scores = {}
         for meaning, clues in rules.items():
             score = sum(1 for clue in clues if clue in context_text)
@@ -190,14 +190,14 @@ class SemanticIMRaDExtractor:
         return word_lower
     
     def extract_nodes_with_semantics(self, text: str, sections: Dict[str, str]) -> List[Dict[str, Any]]:
-        """使用语义理解提取节点"""
+        """Extract nodes using semantic understanding"""
         nodes = []
         
         for section_name, section_text in sections.items():
             sentences = self._segment_sentences(section_text)
             
             for i, sentence in enumerate(sentences):
-                if len(sentence.strip()) < 20:  # 跳过太短的句子
+                if len(sentence.strip()) < 20:  # Skip overly short sentences
                     continue
                 
                 # 获取周围句子的上下文
@@ -208,7 +208,7 @@ class SemanticIMRaDExtractor:
                 matched_type = self._semantic_match(sentence, context)
                 
                 if matched_type:
-                    # 语义消歧处理
+                    # Semantic Disambiguation处理
                     disambiguated_text = self._apply_semantic_disambiguation(sentence, context)
                     
                     node = {
@@ -240,7 +240,7 @@ class SemanticIMRaDExtractor:
             return [s.strip() for s in sentences if s.strip() and len(s.strip()) > 10]
     
     def _semantic_match(self, sentence: str, context: SemanticContext) -> Optional[str]:
-        """基于语义的匹配"""
+        """Semantic-based matching"""
         sentence_lower = sentence.lower()
         
         # 计算每个节点类型的语义匹配分数
@@ -259,12 +259,12 @@ class SemanticIMRaDExtractor:
                 if clue in sentence_lower:
                     score += 3
             
-            # 3. 语义角色匹配
+            # 3. Semantic Role匹配
             for role in patterns["semantic_roles"]:
                 if role in context.semantic_role:
                     score += 1
             
-            # 4. 章节上下文匹配
+            # 4. Section上下文匹配
             section_weights = {
                 "introduction": {"Hypothesis": 2, "Experiment": 0, "Dataset": 0, "Analysis": 0, "Conclusion": 0},
                 "methods": {"Hypothesis": 0, "Experiment": 2, "Dataset": 2, "Analysis": 0, "Conclusion": 0},
@@ -286,7 +286,7 @@ class SemanticIMRaDExtractor:
         return None
     
     def _apply_semantic_disambiguation(self, sentence: str, context: SemanticContext) -> str:
-        """应用语义消歧到句子"""
+        """Apply semantic disambiguation to a sentence"""
         words = sentence.split()
         disambiguated_words = []
         
@@ -305,7 +305,7 @@ class SemanticIMRaDExtractor:
         return f"{prefix}_{uuid.uuid4().hex[:6]}"
     
     def build_semantic_edges(self, nodes: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """构建基于语义的边关系"""
+        """Build semantic-based edge relationships"""
         edges = []
         
         # 按类型分组节点
@@ -340,8 +340,8 @@ class SemanticIMRaDExtractor:
         return edges
     
     def _calculate_semantic_similarity(self, node1: Dict[str, Any], node2: Dict[str, Any]) -> float:
-        """计算两个节点之间的语义相似度"""
-        # 简单的相似度计算：基于共同实体和语义角色
+        """Compute semantic similarity between two nodes"""
+        # 简单的相似度计算：基于共同实体和Semantic Role
         entities1 = set(node1.get("semantic_context", {}).get("entities", []))
         entities2 = set(node2.get("semantic_context", {}).get("entities", []))
         
@@ -356,7 +356,7 @@ class SemanticIMRaDExtractor:
 
 # 测试函数
 if __name__ == "__main__":
-    # 测试语义提取器
+    # Test semantic extractor
     extractor = SemanticIMRaDExtractor()
     
     test_text = """
@@ -369,9 +369,9 @@ if __name__ == "__main__":
     sections = {"introduction": test_text}
     nodes = extractor.extract_nodes_with_semantics(test_text, sections)
     
-    print("语义提取结果:")
+    print("Semantic extraction results:")
     for node in nodes:
         print(f"- {node['type']}: {node['text'][:50]}...")
-        print(f"  语义角色: {node['semantic_context']['role']}")
-        print(f"  关键实体: {node['semantic_context']['entities']}")
+        print(f"  Semantic Role: {node['semantic_context']['role']}")
+        print(f"  Key Entities: {node['semantic_context']['entities']}")
         print()
