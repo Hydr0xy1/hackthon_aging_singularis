@@ -114,4 +114,8 @@ Contributing & License
 
 Recommended license: MIT or Apache-2.0 (add LICENSE to repo).
 
+<<<<<<< HEAD
 Contributions welcome: add cue patterns, implement/improve SemanticIMRaDExtractor, add tests and examples. Please include sample inputs + expected outputs in PRs.
+=======
+Contributions welcome: add cue patterns, implement/improve SemanticIMRaDExtractor, add tests and examples. Please include sample inputs + expected outputs in PRs.
+>>>>>>> 325659f0f8106502ed2f42ece003f4ab37b5b060

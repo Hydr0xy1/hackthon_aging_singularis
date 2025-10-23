@@ -3,38 +3,38 @@ import uuid
 import spacy
 from typing import List, Dict, Any
 
-# 尝试加载spacy模型，但有fallback
+# Try to load spaCy model，but have fallback
 try:
     nlp = spacy.load("en_core_web_sm")
     SPACY_AVAILABLE = True
 except OSError:
-    print("⚠️  spaCy英语模型未安装，使用简单句子分割")
-    print("   运行: python -m spacy download en_core_web_sm")
+    print("⚠️  spaCy en_core_web_sm is not installed, use simple Sentence segmentation")
+    print("   Run: python -m spacy download en_core_web_sm")
     nlp = None
     SPACY_AVAILABLE = False
 except Exception as e:
-    print(f"⚠️  spaCy加载失败: {e}，使用简单句子分割")
+    print(f"⚠️  spaCy import error: {e}，use simple Sentence segmentation")
     nlp = None
     SPACY_AVAILABLE = False
 
 def gen_id(prefix: str) -> str:
-    """生成唯一ID"""
+    """Generate a unique ID"""
     return f"{prefix}_{uuid.uuid4().hex[:6]}"
 
 def sentence_segmentation(text: str) -> List[str]:
-    """句子分割 - 使用spacy，有fallback"""
+    """Sentence segmentation - use spacy, and have fallback"""
     if SPACY_AVAILABLE and len(text) > 10:
         try:
             doc = nlp(text)
             return [sent.text.strip() for sent in doc.sents if sent.text.strip()]
         except Exception as e:
-            print(f"spaCy分割失败: {e}，使用简单分割")
+            print(f"spaCy segment filed: {e}，use simple sentence segmentation")
     
-    # fallback: 简单句子分割
+    # fallback: simple Sentence segmentation
     sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z])', text)
     return [s.strip() for s in sentences if s.strip() and len(s.strip()) > 10]
 
-# IMRaD分段正则模式
+# IMRaD section regex patterns
 SECTION_PATTERNS = {
     "introduction": r"(?:^|\n)(?:\s*\d*\.*\s*Introduction|Background)",
     "methods": r"(?:^|\n)(?:\s*\d*\.*\s*(Materials and Methods|Methods|Experimental Procedures))",
@@ -42,7 +42,7 @@ SECTION_PATTERNS = {
     "discussion": r"(?:^|\n)(?:\s*\d*\.*\s*(Discussion|Conclusion|Summary))",
 }
 
-# 节点提取正则模式 - 这是缺失的 CUE_PATTERNS！
+# Node extraction regex patterns - missing CUE_PATTERNS!
 CUE_PATTERNS = {
     "Hypothesis": [
         r"\bwe hypothesi[sz]e\b",
@@ -106,7 +106,7 @@ CUE_PATTERNS = {
     ]
 }
 
-# 简单的映射关系
+# Simple mapping relationships
 SECTION_NODE_PRIORITY = {
     "introduction": ["Hypothesis"],
     "methods": ["Experiment", "Dataset"],
@@ -116,7 +116,7 @@ SECTION_NODE_PRIORITY = {
 }
 
 def match_patterns(text: str, patterns: List[str]) -> List[tuple]:
-    """返回匹配的模式列表"""
+    """Return a list of matched patterns"""
     matches = []
     for pattern in patterns:
         if re.search(pattern, text, re.IGNORECASE):
@@ -124,23 +124,22 @@ def match_patterns(text: str, patterns: List[str]) -> List[tuple]:
     return matches
 
 def get_section_for_node(text: str, sections: Dict[str, str]) -> str:
-    """根据文本内容确定节点所属的章节"""
+    """Determine which section a node belongs to based on text"""
     for section_name, section_text in sections.items():
         if text in section_text:
             return section_name
     return "unknown"
 
-# 测试函数
+# Test function
 if __name__ == "__main__":
-    # 测试句子分割
+    # Sentence segmentation test
     test_text = "This is a test. We hypothesize that this works. We conducted experiments. In conclusion, it works."
     sentences = sentence_segmentation(test_text)
-    print("句子分割测试:")
+    print("Sentence segmentation test:")
     for i, sent in enumerate(sentences):
         print(f"  {i+1}. {sent}")
     
-    # 测试模式匹配
-    print("\n模式匹配测试:")
+    print("\nPattern matching test:")
     test_sentences = [
         "We hypothesize that artemisinin works.",
         "We conducted experiments with n=24 mice.",

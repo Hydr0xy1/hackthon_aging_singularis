@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-对比传统正则表达式方法与语义感知方法的效果
+Comparison of traditional regex-based and semantic-aware methods
 """
 
 import sys
@@ -12,7 +12,7 @@ from typing import List, Dict, Any
 from collections import Counter, defaultdict
 
 def load_nodes_from_csv(csv_file: str) -> List[Dict[str, Any]]:
-    """从CSV文件加载节点"""
+    """Load nodes from CSV file"""
     if not os.path.exists(csv_file):
         return []
     
@@ -31,7 +31,7 @@ def analyze_semantic_improvements(traditional_nodes: List[Dict[str, Any]],
         "quality_improvements": {}
     }
     
-    # 基本统计对比
+    # Basic Statistics Comparison
     analysis["basic_stats"] = {
         "traditional_nodes": len(traditional_nodes),
         "semantic_nodes": len(semantic_nodes),
@@ -39,14 +39,14 @@ def analyze_semantic_improvements(traditional_nodes: List[Dict[str, Any]],
         "improvement_rate": (len(semantic_nodes) - len(traditional_nodes)) / len(traditional_nodes) * 100 if traditional_nodes else 0
     }
     
-    # 节点类型分布对比
+    # Node Type Distribution Comparison
     traditional_types = Counter([node.get("type", "Unknown") for node in traditional_nodes])
     semantic_types = Counter([node.get("type", "Unknown") for node in semantic_nodes])
     
     analysis["basic_stats"]["traditional_type_distribution"] = dict(traditional_types)
     analysis["basic_stats"]["semantic_type_distribution"] = dict(semantic_types)
     
-    # 语义特征分析
+    # Semantic Feature Analysis
     semantic_features = {
         "nodes_with_semantic_context": 0,
         "disambiguation_applied": 0,
@@ -107,7 +107,7 @@ def analyze_semantic_improvements(traditional_nodes: List[Dict[str, Any]],
     
     analysis["disambiguation_analysis"] = {
         "total_disambiguated": len(disambiguation_examples),
-        "examples": disambiguation_examples[:5]  # 显示前5个示例
+        "examples": disambiguation_examples[:5]  # 显示前5个Example
     }
     
     # 质量改进分析
@@ -118,7 +118,7 @@ def analyze_semantic_improvements(traditional_nodes: List[Dict[str, Any]],
         "evidence_diversity_semantic": 0
     }
     
-    # 计算平均置信度
+    # 计算Average Confidence
     if traditional_nodes:
         confidences = [node.get("confidence", 0) for node in traditional_nodes if isinstance(node.get("confidence"), (int, float))]
         quality_metrics["average_confidence_traditional"] = sum(confidences) / len(confidences) if confidences else 0
@@ -127,7 +127,7 @@ def analyze_semantic_improvements(traditional_nodes: List[Dict[str, Any]],
         confidences = [node.get("confidence", 0) for node in semantic_nodes if isinstance(node.get("confidence"), (int, float))]
         quality_metrics["average_confidence_semantic"] = sum(confidences) / len(confidences) if confidences else 0
     
-    # 证据多样性
+    # Evidence Diversity
     traditional_evidence = set([node.get("evidence", "") for node in traditional_nodes])
     semantic_evidence = set([node.get("evidence", "") for node in semantic_nodes])
     
@@ -145,7 +145,7 @@ def generate_comparison_report(analysis: Dict[str, Any], output_file: str):
 <!DOCTYPE html>
 <html>
 <head>
-    <title>语义方法 vs 传统方法对比报告</title>
+    <title>Semantic vs Traditional Comparison Report</title>
     <meta charset="utf-8">
     <style>
         body { 
@@ -206,31 +206,31 @@ def generate_comparison_report(analysis: Dict[str, Any], output_file: str):
 </head>
 <body>
     <div class="container">
-        <h1>📊 语义方法 vs 传统方法对比报告</h1>
+        <h1>📊 Semantic vs Traditional Comparison Report</h1>
         
         <div class="metric-card">
-            <h3>📈 基本统计对比</h3>
+            <h3>📈 Basic Statistics Comparison</h3>
             <table class="comparison-table">
                 <tr>
-                    <th>指标</th>
-                    <th>传统方法</th>
-                    <th>语义方法</th>
-                    <th>改进</th>
+                    <th>Metric</th>
+                    <th>Traditional</th>
+                    <th>Semantic</th>
+                    <th>Improvement</th>
                 </tr>
                 <tr>
-                    <td>节点总数</td>
+                    <td>Total node number</td>
                     <td>%TRADITIONAL_NODES%</td>
                     <td>%SEMANTIC_NODES%</td>
                     <td class="%NODE_IMPROVEMENT_CLASS%">%NODE_IMPROVEMENT%</td>
                 </tr>
                 <tr>
-                    <td>平均置信度</td>
+                    <td>Average Confidence</td>
                     <td>%TRADITIONAL_CONFIDENCE%</td>
                     <td>%SEMANTIC_CONFIDENCE%</td>
                     <td class="%CONFIDENCE_IMPROVEMENT_CLASS%">%CONFIDENCE_IMPROVEMENT%</td>
                 </tr>
                 <tr>
-                    <td>证据多样性</td>
+                    <td>Evidence Diversity</td>
                     <td>%TRADITIONAL_EVIDENCE%</td>
                     <td>%SEMANTIC_EVIDENCE%</td>
                     <td class="%EVIDENCE_IMPROVEMENT_CLASS%">%EVIDENCE_IMPROVEMENT%</td>
@@ -239,28 +239,28 @@ def generate_comparison_report(analysis: Dict[str, Any], output_file: str):
         </div>
         
         <div class="metric-card">
-            <h3>🧠 语义特征分析</h3>
+            <h3>🧠 Semantic Feature Analysis</h3>
             <div class="semantic-feature">
-                <strong>语义上下文节点:</strong> %SEMANTIC_CONTEXT_NODES% 个
+                <strong>Semantic context node:</strong> %SEMANTIC_CONTEXT_NODES% 
             </div>
             <div class="semantic-feature">
-                <strong>语义消歧应用:</strong> %DISAMBIGUATION_COUNT% 个节点
+                <strong>Semantic disambiguation application:</strong> %DISAMBIGUATION_COUNT% nodes
             </div>
             <div class="semantic-feature">
-                <strong>识别的语义角色:</strong> %UNIQUE_ROLES% 种
+                <strong>Semantic role number:</strong> %UNIQUE_ROLES% 
             </div>
             <div class="semantic-feature">
-                <strong>提取的实体总数:</strong> %TOTAL_ENTITIES% 个
+                <strong>Total entity number:</strong> %TOTAL_ENTITIES% 
             </div>
         </div>
         
         <div class="metric-card">
-            <h3>🔍 语义消歧示例</h3>
+            <h3>🔍 Semantic Disambiguation Example</h3>
             %DISAMBIGUATION_EXAMPLES%
         </div>
         
         <div class="metric-card">
-            <h3>📊 节点类型分布对比</h3>
+            <h3>📊 Node Type Distribution Comparison</h3>
             %TYPE_DISTRIBUTION%
         </div>
     </div>
@@ -268,7 +268,7 @@ def generate_comparison_report(analysis: Dict[str, Any], output_file: str):
 </html>
     """
     
-    # 计算改进指标
+    # 计算改进Metric
     basic_stats = analysis["basic_stats"]
     quality_improvements = analysis["quality_improvements"]
     semantic_features = analysis["semantic_features"]
@@ -282,17 +282,17 @@ def generate_comparison_report(analysis: Dict[str, Any], output_file: str):
     conf_improvement = quality_improvements["average_confidence_semantic"] - quality_improvements["average_confidence_traditional"]
     conf_improvement_class = "improvement" if conf_improvement > 0 else "degradation"
     
-    # 证据多样性改进
+    # Evidence Diversity improvement
     evidence_improvement = quality_improvements["evidence_diversity_semantic"] - quality_improvements["evidence_diversity_traditional"]
     evidence_improvement_class = "improvement" if evidence_improvement > 0 else "degradation"
     
-    # 生成消歧示例HTML
+    # 生成消歧ExampleHTML
     disambiguation_html = ""
     for example in disambiguation_analysis["examples"]:
         disambiguation_html += f"""
         <div style="background: #fff3cd; padding: 10px; margin: 5px 0; border-radius: 4px; border-left: 3px solid #ffc107;">
             <strong>{example['type']}:</strong> {example['text']}...<br>
-            <small>语义角色: {example['role']} | 实体: {', '.join(example['entities'])}</small>
+            <small>Semantic Role: {example['role']} | Entities: {', '.join(example['entities'])}</small>
         </div>
         """
     
@@ -340,13 +340,13 @@ def generate_comparison_report(analysis: Dict[str, Any], output_file: str):
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(html_content)
     
-    print(f"📊 对比报告已生成: {output_file}")
+    print(f"📊 Comparison report has been generated: {output_file}")
 
 def main():
-    """主函数"""
+    """Main function"""
     if len(sys.argv) != 3:
-        print("❌ 使用方法: python compare_methods.py <传统方法节点CSV> <语义方法节点CSV>")
-        print("💡 示例:")
+        print("❌ Usage: python compare_methods.py <Traditional node CSV> <Semantic node CSV>")
+        print("💡 Example:")
         print("   python compare_methods.py outputs/artemisinin_pcos_nodes.csv outputs/artemisinin_pcos_semantic_nodes.csv")
         sys.exit(1)
     
@@ -354,37 +354,37 @@ def main():
     semantic_csv = sys.argv[2]
     
     if not os.path.exists(traditional_csv):
-        print(f"❌ 传统方法文件不存在: {traditional_csv}")
+        print(f"❌ Traditional file doesn't exist: {traditional_csv}")
         sys.exit(1)
     
     if not os.path.exists(semantic_csv):
-        print(f"❌ 语义方法文件不存在: {semantic_csv}")
+        print(f"❌ Semantic file doesn't exist: {semantic_csv}")
         sys.exit(1)
     
-    print("📊 开始对比分析...")
+    print("📊 Start comparison analysis...")
     
-    # 加载节点数据
+    # Load node data
     traditional_nodes = load_nodes_from_csv(traditional_csv)
     semantic_nodes = load_nodes_from_csv(semantic_csv)
     
-    print(f"📁 传统方法节点: {len(traditional_nodes)} 个")
-    print(f"📁 语义方法节点: {len(semantic_nodes)} 个")
+    print(f"📁 Traditional node number: {len(traditional_nodes)}")
+    print(f"📁 Semantic node number: {len(semantic_nodes)}")
     
     # 进行分析
     analysis = analyze_semantic_improvements(traditional_nodes, semantic_nodes)
     
-    # 生成报告
+    # Generate report
     output_file = "outputs/semantic_vs_traditional_comparison.html"
     generate_comparison_report(analysis, output_file)
     
-    # 打印关键指标
-    print("\n🎯 关键改进指标:")
-    print(f"   节点数量改进: {analysis['basic_stats']['node_increase']:+d}")
-    print(f"   语义消歧应用: {analysis['semantic_features']['disambiguation_applied']} 个节点")
-    print(f"   语义角色识别: {analysis['semantic_features']['unique_semantic_roles']} 种")
-    print(f"   实体提取总数: {analysis['semantic_features']['total_entities_extracted']} 个")
+    # Print key metrics
+    print("\n🎯 Key improvement metrics:")
+    print(f"   Node number improvement: {analysis['basic_stats']['node_increase']:+d}")
+    print(f"   Semantic disambiguation application: {analysis['semantic_features']['disambiguation_applied']} node number")
+    print(f"   Semantic role number: {analysis['semantic_features']['unique_semantic_roles']} ")
+    print(f"   Total entity number: {analysis['semantic_features']['total_entities_extracted']} ")
     
-    print(f"\n📊 详细对比报告: {output_file}")
+    print(f"\n📊 Detailed comparison report: {output_file}")
 
 if __name__ == "__main__":
     main()
